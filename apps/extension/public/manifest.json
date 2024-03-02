@@ -1,0 +1,44 @@
+{
+  "short_name": "Petra",
+  "name": "Petra Aptos Wallet",
+  "version": "1.2.8",
+  "manifest_version": 3,
+  "description": "A crypto wallet on Aptos.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Petra"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": [
+      "static/js/contentscript.js"
+    ],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["static/js/inpage.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "background": {
+    "service_worker": "static/js/background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-ancestors 'none';"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms"
+  ],
+  "host_permissions": [
+    "file://*/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

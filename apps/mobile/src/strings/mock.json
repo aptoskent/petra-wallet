@@ -1,0 +1,39 @@
+{
+  "assets": {
+    "nfts": "NFTs"
+  },
+  "activity": {
+    "nullState": {
+      "title": "No Activity Yet",
+      "message": "All of your transactions and dApp interactions will show up here."
+    },
+    "successStatus": "Success",
+    "failedStatus": "Failed"
+  },
+  "general": {
+    "submit": "Submit",
+    "forgotPassword": "Forgot Password?"
+  },
+  "onboarding": {
+    "importWallet": {
+      "title": "Import Account",
+      "subtext": "you'll do something",
+      "addPrivateKey": {
+        "title": "Enter Private Key",
+        "subtext": "Add an existing wallet with your private key.",
+        "privateKeyInputPlaceholder": "Enter private key"
+      }
+    }
+  },
+  "send": {
+    "confirmation": {
+      "newAccountWarningTitle": "Account Not Yet Found",
+      "newAccountWarningText": "You’re sending APT to a new account. This account will be created on-chain. Be sure you have the right address."
+    }
+  },
+  "settings": {
+    "manageAccount": {
+      "title": "Manage Account"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Black.ttf",
+      "sha1": "5147ae4f5b0ec11dc9ce6afb24e26c1bcb9f913d"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Bold.ttf",
+      "sha1": "048d6d2ced2cd4a4513e19ce9765c96896039087"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-ExtraBold.ttf",
+      "sha1": "83e6e490d0bd85263e7fd13e8de21c72d27e6740"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-ExtraLight.ttf",
+      "sha1": "da7b8d9c8690ab9578701bd344a0a6e2d779d119"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Light.ttf",
+      "sha1": "7072fb1da403cc0618804b71b72b4df5a8b3647d"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Medium.ttf",
+      "sha1": "a8cf94376a573ae2c43d0457a28b4357e9808946"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Regular.ttf",
+      "sha1": "89a5d38e1316b70da48e9475628023264af74783"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-SemiBold.ttf",
+      "sha1": "f12114ffb09b58990f7aab420b592c3e4315ff95"
+    },
+    {
+      "path": "src/shared/assets/fonts/WorkSans-Thin.ttf",
+      "sha1": "bf150c5dc03745ef7342e7c6882451dba2539724"
+    }
+  ]
+}

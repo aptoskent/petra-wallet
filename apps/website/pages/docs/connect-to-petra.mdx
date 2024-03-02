@@ -1,0 +1,65 @@
+---
+title: 'Connecting to Petra Wallet'
+slug: 'connect-to-wallet'
+---
+
+# Connecting to Petra
+
+To use Petra with your dApp, your users must first install the Petra [Chrome extension](https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfci) in their browser. Petra injects an `aptos` object into the [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) of any web app the user visits.
+
+To check if the user has installed Petra, perform the below check:
+
+```typescript
+const isPetraInstalled = window.aptos;
+```
+
+<br />
+If Petra is not installed, you can prompt the user to first install Petra and provide
+the below installation instructions. For example, see below:
+
+```typescript
+const getAptosWallet = () => {
+  if ('aptos' in window) {
+    return window.aptos;
+  } else {
+    window.open('https://petra.app/', `_blank`);
+  }
+};
+```
+
+## Installing Petra
+
+To install Petra on your Chrome browser, download the latest stable version from the [Chrome Web Store](https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfci?hl=encategory=extensions).
+
+## Connecting to Petra
+
+After confirming that the web app has the `aptos` object, we can connect to Petra by calling `wallet.connect()`.
+
+When you call `wallet.connect()`, it prompts the user to allow your web app to make additional calls to Petra, and obtains from the user basic information such as the `address` and `public key`.
+
+See the example code below:
+
+```typescript
+const wallet = getAptosWallet();
+try {
+  const response = await wallet.connect();
+  console.log(response); // { address: string, address: string }
+
+  const account = await wallet.account();
+  console.log(account); // { address: string, address: string }
+} catch (error) {
+  // { code: 4001, message: "User rejected the request."}
+}
+```
+
+**NOTE**: After the user has approved the connnection for the first time, the web app's domain will be remembered for the future sessions.
+
+## Disconnecting Petra
+
+When you want the web app to forget about the connection status with Petra, you can do this by calling `wallet.disconnect()` in your web app. See below:
+
+```typescript
+await wallet.disconnect();
+```
+
+**NOTE**: After disconnecting, the web app must reconnect to Petra to make requests.

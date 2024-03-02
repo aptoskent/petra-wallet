@@ -1,0 +1,368 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+# Uncomment the line if you want fastlane to automatically update itself
+# https://docs.fastlane.tools/actions/update_fastlane/
+update_fastlane
+
+# https://docs.fastlane.tools/actions/default_platform/
+default_platform(:ios)
+
+# https://docs.fastlane.tools/actions/is_ci/
+if is_ci
+  setup_ci(
+    timeout: 7200
+  )
+end
+
+desc "Set XCode Version"
+lane :set_up_xcode do
+  if is_ci
+    xcodes(version: "14.2")
+  else
+    xcodes(version: "14.3")
+  end
+end
+
+desc "Load App Store Connect API Key information to use in subsequent lanes"
+lane :load_asc_api_key do
+  # https://docs.fastlane.tools/actions/app_store_connect_api_key/
+  app_store_connect_api_key(
+    key_id: ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"],
+    issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+    key_content: ENV["APP_STORE_CONNECT_API_KEY_KEY"],
+    is_key_content_base64: true,
+    in_house: false # detecting this via ASC private key not currently supported
+  )
+end
+
+desc "Bump version number based on most recent TestFlight version number"
+lane :fetch_and_increment_version_number do
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+  bump_type = ENV['VERSION_BUMP_TYPE'] || "patch"
+
+  increment_version_number(
+    xcodeproj: "Petra Wallet.xcodeproj",
+    bump_type: bump_type
+  )
+end
+desc "Bump build number based on most recent TestFlight build number"
+lane :fetch_and_increment_build_number do
+ #fetch read your app identifier defined in your Appfile
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+
+  # https://docs.fastlane.tools/actions/get_version_number/
+  current_version = get_version_number(
+    xcodeproj: "Petra Wallet.xcodeproj",
+    target: "Petra Wallet" # replace with your main target, required if you have more than one non-test target
+  )
+
+  # https://docs.fastlane.tools/actions/latest_testflight_build_number/
+  latest_build_number = latest_testflight_build_number(
+    api_key: api_key,
+    version: current_version,
+    app_identifier: app_identifier
+  )
+
+  # https://docs.fastlane.tools/actions/increment_build_number/
+  increment_build_number(
+    build_number: (latest_build_number + 1),
+  )
+end
+
+desc "Get certificates"
+lane :certificates do
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  # https://docs.fastlane.tools/actions/sync_code_signing/
+  sync_code_signing(
+    type: "appstore",
+    app_identifier: app_identifier,
+    readonly: true
+  )
+end
+
+desc "Generate new certificates"
+lane :generate_new_certificates do
+  # https://docs.fastlane.tools/actions/sync_code_signing/
+  sync_code_signing(
+    type: "appstore",
+    app_identifier: app_identifier,
+    force_for_new_devices: true,
+    readonly: false
+  )
+end
+
+desc "Setup certificates"
+lane :setup_certificate_and_provision_profiles do
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+
+  # https://docs.fastlane.tools/actions/match/
+  match(
+    readonly: true,
+    app_identifier: app_identifier,
+    type: 'appstore'
+  )
+end
+
+desc "Remove and create keychain"
+lane :delete_create_keychain do |options|
+  keychain_name = ENV["SIGNING_KEY_CHAIN_NAME"]
+  keychain_password = ENV["SIGNING_KEY_PASSWORD"]
+
+  # Delete keychains and remove them from the search list
+  # https://docs.fastlane.tools/actions/delete_keychain/
+  delete_keychain(
+    name: keychain_name
+  ) if File.exist? File.expand_path("~/Library/Keychains/#{keychain_name}-db")
+
+  # https://docs.fastlane.tools/actions/create_keychain/
+  create_keychain(
+    name: keychain_name,
+    password: keychain_password,
+    default_keychain: true,
+    unlock: true,
+    timeout: 3600
+  )
+end
+
+desc "Installs signing certificate in the keychain and downloads provisioning profiles from App Store Connect"
+lane :prepare_signing do |options|
+  team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+  team_name = CredentialsManager::AppfileConfig.try_fetch_value(:team_name)
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+
+  keychain_name = ENV["SIGNING_KEY_CHAIN_NAME"]
+  keychain_password = ENV["SIGNING_KEY_PASSWORD"]
+
+  # Delete keychains and remove them from the search list
+  # https://docs.fastlane.tools/actions/delete_keychain/
+  delete_keychain(
+    name: keychain_name
+  ) if File.exist? File.expand_path("~/Library/Keychains/#{keychain_name}-db")
+
+  # https://docs.fastlane.tools/actions/create_keychain/
+  create_keychain(
+    name: keychain_name,
+    password: keychain_password,
+    default_keychain: true,
+    unlock: true,
+    timeout: 3600
+  )
+
+  # if in CI, use already generated certificate for code signing
+  if is_ci
+    # https://docs.fastlane.tools/actions/import_certificate/
+    import_certificate(
+      certificate_path: ENV["SIGNING_KEY_FILE_PATH"],
+      certificate_password: ENV["SIGNING_KEY_PASSWORD"],
+      keychain_name: keychain_name,
+      keychain_password: keychain_password
+    )
+
+    # fetches and installs provisioning profiles from App Store Connect
+    # https://docs.fastlane.tools/actions/sigh/
+    sigh(
+      adhoc: options[:adhoc],
+      api_key: api_key,
+      readonly: false,
+      app_identifier: app_identifier,
+      username: ENV["MATCH_USERNAME"],
+      team_id: team_id,
+      team_name: team_name,
+    )
+  # if local, provision and manage certificate locally
+  else
+    setup_certificate_and_provision_profiles
+  end
+end
+
+desc "Build the iOS app for release"
+lane :build do |options|
+  # set timeout and retry to avoid timeout issue with xcodebuild -showBuildSettings
+  ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
+  ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "10"
+
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+
+  profile_name = "match AppStore #{app_identifier}" # replace with the name of the profile to use for the build
+  output_name = "Petra-Wallet.ipa" # specify the name of the .ipa file to generate
+  export_method = "app-store" # specify the export method
+
+  # turn off automatic signing during build so correct code signing identity is guaranteed to be used
+  # https://docs.fastlane.tools/actions/update_code_signing_settings/
+  update_code_signing_settings(
+    use_automatic_signing: false,
+    path: "Petra Wallet.xcodeproj",
+    targets: ["Petra Wallet"],
+    code_sign_identity: "Apple Distribution",
+    team_id: team_id,
+    bundle_identifier: app_identifier,
+    profile_name: profile_name,
+    build_configurations: ["Release"]
+  )
+
+ # build the app
+ # https://docs.fastlane.tools/actions/gym/
+  gym(
+    workspace: "Petra Wallet.xcworkspace",
+    scheme: "Petra Wallet", # replace with name of your project’s scheme
+    output_name: output_name,
+    configuration: "Release",
+    output_directory: "./build",
+    archive_path: "./build",
+    xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM='#{team_id}'",
+    clean: true,
+    skip_package_dependencies_resolution: true,
+    skip_profile_detection: true,
+    disable_package_automatic_updates: true,
+    catalyst_platform: 'ios',
+    include_bitcode: false,
+    include_symbols: false,
+    export_options: {
+      method: export_method,
+      provisioningProfiles: {
+        app_identifier => profile_name # here you can add any additional bundle identifiers and their associated provisioning profiles if you’re also building an app extension or other bundle identifier
+      }
+    }
+  )
+end
+
+desc "Upload to TestFlight / App Store Connect"
+lane :upload_testflight do
+  begin
+    # Set up xcode and App Store Connect API if haven't already
+    set_up_xcode
+    load_asc_api_key
+
+    # Only deploy to TestFlight when build run on main
+    if is_ci
+      # https://docs.fastlane.tools/actions/ensure_git_branch/
+      ensure_git_branch(branch:"main")
+    end
+
+    api_key = lane_context[SharedValues::APP_STORE_CONNECT_API_KEY]
+
+    deliver(
+      api_key: api_key,
+      skip_screenshots: true,
+      skip_metadata: true,
+      skip_app_version_update: true,
+      force: true, # skips verification of HTML preview file (since this will be run from a CI machine)
+      run_precheck_before_submit: false # not supported through ASC API yet
+    )
+  rescue => ex
+  end
+end
+
+desc "Upload to BrowserStack"
+lane :upload_browserstack do
+  # http://docs.fastlane.tools/plugins/available-plugins/#browserstack
+  upload_to_browserstack_app_automate(
+    browserstack_username: ENV["BROWSERSTACK_USERNAME"],
+    browserstack_access_key: ENV["BROWSERSTACK_ACCESS_KEY"],
+    file_path: "./build/Petra-Wallet.ipa",
+  )
+  if is_ci
+    set_browserstack_app_id
+  end
+end
+
+desc "Delete uploaded file from BrowserStack once finished"
+lane :delete_uploaded_file_in_browserstack do
+  # https://www.browserstack.com/docs/app-automate/appium/getting-started/java/testng/manage-apps/delete-app
+  sh("curl -u #{ENV['BROWSERSTACK_USERNAME']}:#{ENV['BROWSERSTACK_ACCESS_KEY']}  -X DELETE https://api-cloud.browserstack.com/app-automate/app/delete/#{lane_context[SharedValues::BROWSERSTACK_APP_ID]}")
+end
+
+desc "Set BROWSERSTACK_APP_ID to Github env variable for e2e testing"
+lane :set_browserstack_app_id do
+  app_id = lane_context[SharedValues::BROWSERSTACK_APP_ID]
+  
+  if app_id != nil && is_ci
+    sh("echo BROWSERSTACK_IOS_APP_ID=#{app_id} >> $GITHUB_ENV")
+    sh("source $GITHUB_ENV")
+    puts("Setting Environment variable BROWSERSTACK_IOS_APP_ID =#{app_id}")
+  end
+end
+
+desc "Build for simulator"
+lane :build_simulator do
+  app_identifier = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+  set_up_xcode
+
+  build_app(
+    scheme: "Petra Wallet",
+    workspace: "Petra Wallet.xcworkspace",
+    configuration: "Debug",
+    derived_data_path: "./build",
+    output_directory: "./build",
+    build_path: "./build",
+    archive_path: "./build",
+    skip_package_ipa: true,
+    skip_archive: true,
+    destination: "generic/platform=iOS Simulator"
+)
+end
+
+desc "Build the release"
+lane :build_release do
+  set_up_xcode
+  load_asc_api_key
+  prepare_signing
+  fetch_and_increment_build_number
+  build
+end
+
+desc "Build and upload the release to App Store Connect & BrowserStack"
+lane :build_upload_testflight_browserstack do
+  build_release
+  upload_testflight
+  upload_browserstack
+  set_browserstack_app_id
+end
+
+desc "Build and upload to TestFlight / App Store Connect"
+lane :build_upload_testflight do
+  build_release
+  upload_testflight
+end
+
+desc "Build and upload to BrowserStack"
+lane :build_upload_browserstack do
+  build_release
+  upload_browserstack
+  set_browserstack_app_id
+end
+
+# error block is executed when a error occurs
+error do |lane, exception|
+  slack(
+    # message with short human friendly message
+    message: exception.to_s,
+    success: false,
+    default_payloads: [:git_branch, :git_author, :last_git_commit, :last_git_commit_hash],
+    # publish error message to slack channel #petra-ci-logs
+    slack_url: "https://hooks.slack.com/services/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",
+    # Output containing extended log output
+    payload: { "Output" => exception.to_s },
+    attachment_properties: {
+      fields: [
+          {
+              title: "Build number",
+              value: ENV["BUILD_NUMBER"],
+          },
+      ]
+    }
+  )
+end

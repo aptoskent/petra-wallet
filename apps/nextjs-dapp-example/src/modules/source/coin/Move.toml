@@ -1,0 +1,11 @@
+[package]
+name = "Examples"
+version = "0.0.0"
+
+[addresses]
+MoonCoin = "0x894f32eb8d295f1e618570d980b816a0c4546fc7e79bc81cc07028460b23a25b"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'devnet'
+subdir = 'aptos-move/framework/aptos-framework'

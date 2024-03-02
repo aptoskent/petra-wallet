@@ -1,0 +1,174 @@
+{
+  "accounts": "Accounts",
+  "addAccount": "Add an Account",
+  "removeAccounts": "Remove Account(s)",
+  "selectAccountsToRemove": "Select Account(s) to Remove",
+  "buy": "Buy",
+  "faucet": "Faucet",
+  "buyApt": "Buy APT",
+  "moonpay": {
+    "infoText": "Buy APT using Visa, Mastercard, Apple Pay, Google Pay, or Samsung Pay. Funds will be added to your Petra Wallet.",
+    "buttonText": "Continue to MoonPay"
+  },
+  "toast": {
+    "failedSwitchAccount": "Failed to switch accounts.",
+    "copyAddress": "Address Copied"
+  },
+  "send": "Send",
+  "receive": {
+    "title": "Receive",
+    "description": "Share your account address with someone in order to receive assets from them."
+  },
+  "swap": "Swap",
+  "coins": "Coins",
+  "nfts": "NFTs",
+  "noCoinsYet": {
+    "title": "No Coins Yet",
+    "subtext": "All of your coins will show up here."
+  },
+  "names": "Names",
+  "namesEmptyState": {
+    "registerAnsName": "Register Your ANS Name",
+    "noNames": {
+      "heading": "No Names Yet",
+      "subtext": "All of your Names will show up here."
+    }
+  },
+  "nftsDetail": {
+    "description": {
+      "title": "Details",
+      "fromCollection": "From the collection",
+      "seeMore": "See more",
+      "seeLess": "See less"
+    },
+    "detail": {
+      "title": "Details",
+      "createdBy": "Created by",
+      "viewOnProvider": "View on",
+      "viewOnTopaz": "View on Topaz",
+      "acquiredOn": "Acquired on"
+    },
+    "attributes": {
+      "title": "Attributes",
+      "empty": "No Attributes"
+    },
+    "properties": {
+      "title": "On-chain Properties",
+      "empty": "No Properties"
+    },
+    "history": {
+      "title": "History",
+      "deposited": "Deposited",
+      "claimed": "Claimed",
+      "created": "Created",
+      "cancelled": "Cancelled",
+      "minted": "Minted",
+      "offered": "Offered",
+      "withdrew": "Withdrew",
+      "mutatedToken": "Mutated Token",
+      "empty": "No History",
+      "error": "Error fetching token activit"
+    }
+  },
+  "nftsEmptyState": {
+    "exploreNfts": "Explore NFTs",
+    "zeroCollected": "Collected (0)",
+    "noNfts": {
+      "heading": "No NFTs Yet",
+      "subtext": "All of your NFTs will show up here."
+    },
+    "pendingReceived": {
+      "heading": "No NFT Offers Received Yet",
+      "subtext": "If someone offers to send you a NFT, it will show up here and you can choose to Accept or Decline it."
+    },
+    "pendingSent": {
+      "heading": "No NFT Offers Sent Yet",
+      "subtext": "You can choose to send a NFT as an Offer. The recipient will need to Accept it in order to add it to their wallet."
+    }
+  },
+  "offersReceived": "Offers Received",
+  "offersSent": "Offers Sent",
+  "pendingNfts": {
+    "title": "Pending NFTs",
+    "none": "None"
+  },
+  "stakeFlow": {
+    "enterAmount": {
+      "title": "Enter Stake Amount",
+      "max": "Max",
+      "errorMinimum": "Amount should be min 11 APT",
+      "errorInsufficient": "Insufficient balance. Please try another."
+    },
+    "confirmStake": {
+      "title": "Confirm Stake"
+    },
+    "enterStakeAmount": {
+      "title": "Enter Stake Amount"
+    },
+    "faq": {
+      "title": "Delegated Staking FAQ"
+    },
+    "terminal": {
+      "viewDetails": "View Details"
+    },
+    "firstTimeBanner": {
+      "title": "Stake to receive up to 7% in rewards",
+      "description": "Support Aptos decentralization"
+    }
+  },
+  "sendFlow": {
+    "cancelTransaction": {
+      "title": "Cancel Transaction?",
+      "subtext": "Canceling the transaction will abort progress and return you to the home screen.",
+      "abortCancel": "No. Stay here.",
+      "confirmCancel": "Yes. Cancel transaction."
+    },
+    "confirmSend": "Confirm Send",
+    "enterAmount": "Enter Amount",
+    "selectCoin": "Select Coin",
+    "selectRecipient": "Select Recipient",
+    "successfullySent": "Successfully Sent in ",
+    "successfullySentSeconds": " seconds!",
+    "placeholderInputTextAddress": "Name or address",
+    "placeholderInputTextCoins": "Search coins",
+    "noAvailableCoinsText": "No Available Coins",
+    "noAvailableCoinsSubtext": "You can only send coins that you have in your account.",
+    "noMatchingCoinsText": "No Matching Coins",
+    "noMatchingCoinsSubtext": "Please try with a different query",
+    "noAccountText": "No Accounts Found",
+    "noAccountSubtext": "Please try with a different query",
+    "noRecentContactsText": "No Recent Contacts",
+    "noRecentContactsSubtext": "Suggestions will show up after interacting with other accounts",
+    "noRecentContacts": "No Recent Contacts",
+    "transactionDetails": {
+      "addressUsed": "Address Used",
+      "network": "Network",
+      "networkFee": "Network Fee",
+      "networkFeeInfo": "A network fee is the additional cost for a transaction to process.",
+      "totalCost": "Total Cost",
+      "totalCostInfo": "The total cost is the transaction amount plus the network fee."
+    },
+    "topPeople": "Top People"
+  },
+  "explore": {
+    "topDapps": "Top Dapps",
+    "searchTerm": "search this term",
+    "searchUrl": "go to URL",
+    "searchProfile": "go to Profile",
+    "invalidUrl": "Please enter a valid URL.",
+    "webError": "Error loading web page.",
+    "typeToSearch": "Start typing to search for apps...",
+    "noResults": "No results found"
+  },
+  "total": "TOTAL",
+  "activity": {
+    "youSent": "You sent",
+    "toSend": "to send",
+    "youReceived": "You received",
+    "youSwapped": "You swapped",
+    "toMint": "to mint",
+    "youMinted": "You minted",
+    "toSwap": "to swap",
+    "networkFee": "Network Fee"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extends": "@petra/tsconfig/react-library.json",
+  "compilerOptions": {
+    "lib": [
+      "dom"
+    ],
+    "target": "esnext",
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": [
+    ".eslintrc.js",
+    "babel.config.js",
+    "jest.config.ts",
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

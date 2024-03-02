@@ -1,0 +1,37 @@
+{
+  "detail": "Transaction Details",
+  "version": "Version",
+  "timestamp": "Timestamp",
+  "gas": "Gas Used",
+  "status": "Status",
+  "successStatus": "Success",
+  "failedStatus": "Failed",
+  "nullState": {
+    "title": "No Activity Yet",
+    "message": "All of your transactions and dApp interactions will show up here."
+  },
+  "type": "Type",
+  "amount": "Amount",
+  "from": "From",
+  "to": "To",
+  "send": "Send",
+  "receive": "Receive",
+  "swap": "Swap",
+  "send_token": "Send Token",
+  "receive_token": "Receive Token",
+  "mint_token": "Mint Token",
+  "name": "Name",
+  "date": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week"
+  },
+  "stakeEvents": {
+    "stakedWith": "You staked with",
+    "unstakedWith": "You unstaked with",
+    "withdrewFrom": "You withdrew from",
+    "staked": "Staked",
+    "unstaked": "Unstaked",
+    "withdrawn": "Withdrew stake"
+  }
+}

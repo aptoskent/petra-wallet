@@ -1,0 +1,9 @@
+name = "invite-code"
+main = "src/index.ts"
+compatibility_date = "2023-03-08"
+node_compat = true
+
+[[ d1_databases ]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "invite-code"
+database_id = "ff6dca58-ad9a-4cb9-a1fb-3f6c4a67bac6"

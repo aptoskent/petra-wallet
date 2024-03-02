@@ -1,0 +1,20 @@
+schema: https://indexer.mainnet.aptoslabs.com/v1/graphql
+overwrite: true
+documents: operations.graphql
+generates:
+  src/generated/types.ts:
+    plugins:
+      - typescript
+  src/generated/operations.ts:
+    preset: import-types-preset
+    presetConfig:
+      typesPath: ./types
+    plugins:
+      - typescript-operations
+  src/generated/sdk.ts:
+    preset: import-types-preset
+    presetConfig:
+      typesPath:
+        - ./operations
+    plugins:
+      - typescript-graphql-request

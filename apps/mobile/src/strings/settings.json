@@ -1,0 +1,161 @@
+{
+  "accountAddressPopover": {
+    "copyAddress": "Copy Address",
+    "qrCode": "My QR Code"
+  },
+  "cameraInstructions": {
+    "title": "Camera permissions denied",
+    "subTitle": "Please allow camera permissions for the app",
+    "button": " button",
+    "direct1": "1: Press the ",
+    "direct2": "2: Select ",
+    "direct3": "3: Select ",
+    "direct4": "4: Select ",
+    "step1": "Open App Settings",
+    "step2": "Permissions",
+    "step3": "Camera",
+    "step4": "Allow",
+    "step5": "5: Force quit and reopen the app"
+  },
+  "forceUpdate": {
+    "update": "Update",
+    "description": "Download the latest version of the app for the best experience.",
+    "title": "Time for an upgrade!"
+  },
+  "underConstruction": {
+    "description": "We are sorry for the inconvienience and are working on a fix for this.",
+    "title": "Under construction!"
+  },
+  "settingListItems": {
+    "network": "Network",
+    "accountDetails": "Account Details",
+    "securityPrivacy": "Security & Privacy",
+    "notifications": "Notifications",
+    "viewOnExplorer": "View on Explorer",
+    "helpSupport": "Help & Support",
+    "addAccount": "Add an Account",
+    "switchToDarkMode": "Switch to Dark Mode",
+    "removeAccount": "Remove Account"
+  },
+  "manageAccount": {
+    "title": "Manage Account",
+    "secretRecoveryPhrase": {
+      "title": "Secret Recovery Phrase",
+      "description": "This 12-word phrase allows you to recover your wallet and access the assets inside.",
+      "caution": {
+        "title": "Do Not Share Your Recovery Phrase!",
+        "body": "If someone has this secret recovery phrase, they will have full control or your wallet. If you lose it, not even Petra can help you recover it."
+      }
+    },
+    "accountName": {
+      "label": "Account Name",
+      "title": "Edit Account Name",
+      "placeholder": "Enter account name",
+      "errorMessage": "Unable to update account name",
+      "save": "Save",
+      "maxLength": "Max 30 characters."
+    },
+    "privateKey": {
+      "title": "Private Key",
+      "copy": "Copy",
+      "caution": {
+        "title": "Do not share your private key!",
+        "body": "If someone has this key, they will have full control or your wallet. If you lose it, not even Petra can help you recover it."
+      }
+    },
+    "edit": "Edit",
+    "show": "Show",
+    "caution": {
+      "title": "Proceed with caution.",
+      "body": "Make sure no one is watching your screen before you tap to show your private info."
+    }
+  },
+  "securityPrivacy": {
+    "listItems": {
+      "receivingNFTs": "Receiving NFTs",
+      "autoLockTimer": "Auto-lock Timer"
+    },
+    "title": "Security & Privacy"
+  },
+  "connectedApps": {
+    "title": "Connected Apps",
+    "revokeButtonLabel": "Revoke",
+    "exploreButton": "Explore Apps",
+    "placeholderTitle": "No Connected Apps",
+    "placeholderBody": "Apps connected to your Petra Wallet will show up here."
+  },
+  "directTransferToken": {
+    "title": "Receiving NFTs",
+    "label": "Automatically Receive NFTs",
+    "description": "Let people airdrop NFTs into your wallet. When this setting is off, you need to accept NFTs sent to your address.",
+    "learnMore": "Learn more",
+    "toast": {
+      "toggleOn": "Failed to toggle direct transfer on. Please try again.",
+      "toggleOff": "Failed to toggle direct transfer off. Please try again."
+    },
+    "failedToFetchUserOnChainData": {
+      "label": "Not Able to Retrieve Setting",
+      "body": "There is an issue with fetching your on-chain data to determine whether this setting is on or off. Please restart the app and try again."
+    },
+    "accountNotFound": {
+      "label": "Account Not Yet Found",
+      "body": "Please buy or deposit APT to confirm account on-chain first before opting into automatically receiving NFTs."
+    },
+    "fullModal": {
+      "title": "Confirm Transaction",
+      "onBannerText": "ON: Automatically Receive NFTs",
+      "offBannerText": "OFF: Automatically Receive NFTs",
+      "unableToEstimateGas": "Unable to estimate gas fee",
+      "confirm": "Confirm",
+      "addressUsed": "Address Used",
+      "network": "Network",
+      "networkFee": "Network Fee",
+      "infoText": "Changing this setting again in the future will incur another network fee.",
+      "oneMoment": "One moment..."
+    }
+  },
+  "viewOnExplorer": {
+    "title": "View on Explorer",
+    "modalTitle": "Explorer"
+  },
+  "exploreApp": "Explore",
+  "helpSupport": {
+    "title": "Help & Support"
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "confirmedNewPasswordNotMatch": {
+      "text": "Incorrect confirmed password.",
+      "subtext": "The confirmed new password doesn't match with the new password you entered. Please check your input and try again."
+    },
+    "incorrectCurrentPassword": {
+      "text": "Incorrect current password.",
+      "subtext": "Current password entered is not correct. Please check your input and try again."
+    },
+    "newPasswordNotStrong": {
+      "text": "New password is not strong.",
+      "subtext": "Password has to be at least 9 characters. Please check your input for new password and try again."
+    },
+    "currentPasswordPlaceholder": "Enter current password",
+    "newPasswordPlaceholder": "Enter new password",
+    "confirmedNewPasswordPlaceholder": "Confirm new password",
+    "infoText": "You will use this to unlock your wallet.",
+    "passwordUpdated": {
+      "text": "Password updated successfully!",
+      "subtext": "Your password is updated. You will be redirected to Security & Privacy screen."
+    }
+  },
+  "securityCheckpoint": {
+    "placeholder": "Enter password to proceed",
+    "forgot": "Forgot password?",
+    "incorrect": "Incorrect password",
+    "title": "Security Checkpoint"
+  },
+  "removeAccount": {
+    "message": "Although you are removing this from your Petra Wallet, you’ll be able to retrieve it using your recovery phrase or private key.",
+    "error": {
+      "title": "Something Went Wrong",
+      "message": "Please try again. If the issue persists, please try updating your app."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+name = "moonpay"
+main = "src/index.ts"
+compatibility_date = "2022-11-04"
+node_compat = true
+usage_model = "bundled"
+
+[vars]
+MOONPAY_URL = "https://buy-sandbox.moonpay.com"
+
+[env.production]
+[env.production.vars]
+MOONPAY_URL = "https://buy.moonpay.com"
+
+# Other environment variables are defined as secrets and are not located here
+# You must use wrangler secret put <KEY> or <KEY> --env production to add them

@@ -1,0 +1,139 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+update_fastlane
+
+# https://docs.fastlane.tools/actions/default_platform/
+default_platform(:android)
+
+# https://docs.fastlane.tools/actions/is_ci/
+if is_ci
+  setup_ci(
+    timeout: 7200
+  )
+end
+
+desc "Upload Debug APK to BrowserStack"
+lane :upload_debug_browserstack do
+  # http://docs.fastlane.tools/plugins/available-plugins/#browserstack
+  upload_to_browserstack_app_automate(
+    browserstack_username: ENV["BROWSERSTACK_USERNAME"],
+    browserstack_access_key: ENV["BROWSERSTACK_ACCESS_KEY"],
+    file_path: "./app/build/outputs/apk/debug/app-debug.apk",
+  )
+  if is_ci
+    set_browserstack_app_id
+  end
+end
+
+desc "Upload Debug APK to BrowserStack"
+lane :upload_release_browserstack do
+  # http://docs.fastlane.tools/plugins/available-plugins/#browserstack
+  upload_to_browserstack_app_automate(
+    browserstack_username: ENV["BROWSERSTACK_USERNAME"],
+    browserstack_access_key: ENV["BROWSERSTACK_ACCESS_KEY"],
+    file_path: "./app/build/outputs/apk/release/app-release.apk",
+  )
+  if is_ci
+    set_browserstack_app_id
+  end
+end
+
+desc "Set BROWSERSTACK_APP_ID to Github env variable for e2e testing"
+lane :set_browserstack_app_id do
+  app_id = lane_context[SharedValues::BROWSERSTACK_APP_ID]
+  
+  if app_id != nil && is_ci
+    sh("echo BROWSERSTACK_ANDROID_APP_ID=#{app_id} >> $GITHUB_ENV")
+    sh("source $GITHUB_ENV")
+    puts("Setting Environment variable BROWSERSTACK_ANDROID_APP_ID =#{app_id}")
+  end
+end
+
+desc "Build APK"
+lane :build_apk_release do
+  gradle(task: "clean assembleRelease")
+end
+
+desc "Build APK for Debug"
+lane :build_apk_debug do
+  gradle(task: "clean packageDebug")
+end
+
+
+desc "Build Debug APK & Upload BrowserStack"
+lane :build_debug_upload_browserstack do
+  build_apk_debug
+  upload_debug_browserstack
+end
+
+desc "Build Debug APK & Upload BrowserStack"
+lane :build_release_upload_browserstack do
+  build_apk_release
+  upload_release_browserstack
+end
+
+
+desc "Build AAB"
+lane :build_aab do
+  gradle(task: "clean bundleRelease")
+end
+
+desc "Deploy a new version to the Google Play Store for Internal Testing"
+lane :deploy_internal do
+  build_apk_release
+  upload_to_play_store(
+    track: 'internal',
+    json_key: 'play_config.json',
+  )
+end
+
+desc "Deploy a new version to the Google Play Store for Beta Testing"
+lane :deploy_beta do
+  build_apk_release
+  upload_to_play_store(track: 'beta')
+end
+
+desc "Deploy a new version to the Google Play Store for Alpha Testing"
+lane :deploy_alpha do
+  build_apk_release
+  upload_to_play_store(track: 'alpha')
+end
+
+desc "Deploy a new version to the Google Play Store for Production"
+lane :deploy_production do
+  build_apk_release
+  upload_to_play_store(track: 'production')
+end
+
+# error block is executed when a error occurs
+error do |lane, exception|
+  slack(
+    # message with short human friendly message
+    message: exception.to_s,
+    success: false,
+    default_payloads: [:git_branch, :git_author, :last_git_commit, :last_git_commit_hash],
+    # publish error message to slack channel #petra-ci-logs
+    slack_url: "https://hooks.slack.com/services/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",
+    # Output containing extended log output
+    payload: { "Output" => exception.to_s },
+    attachment_properties: {
+      fields: [
+          {
+              title: "Build number",
+              value: ENV["BUILD_NUMBER"],
+          },
+      ]
+    }
+  )
+end

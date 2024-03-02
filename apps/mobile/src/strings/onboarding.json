@@ -1,0 +1,182 @@
+{
+  "accessibility": {
+    "screen1": "Navigate to Mnemonic",
+    "unlockAccount": "Unlock account"
+  },
+  "welcome": {
+    "homeForDigitalAssets": {
+      "text": "A home for your digital assets.",
+      "subtext": "Safely store and manage your NFTs and tokens with Petra, a self-custodial wallet."
+    },
+    "simplifiedTransaction": {
+      "text": "Simplified transactions.",
+      "subtext": "Seamlessly buy APT through our partners and send tokens in seconds."
+    },
+    "weGotYou": {
+      "text": "New here? We got you.",
+      "subtext": "With user safeguards & simple explanations, we’ll guide you every step of the way."
+    },
+    "by": "By",
+    "labs": "LABS"
+  },
+  "appLaunch": {
+    "title": "Welcome to Petra",
+    "subtext": "A Web3 wallet to explore Aptos.",
+    "createWallet": {
+      "text": "Create New Account",
+      "accessibility": "Create new Petra Wallet"
+    },
+    "importWallet": {
+      "text": "Import Wallet",
+      "accessibility": "Import an existing wallet"
+    }
+  },
+  "importWallet": {
+    "importOptions": {
+      "title": "How Would You Like to Import an Account?"
+    },
+    "import": "Import",
+    "title": "Import Account",
+    "subtext": "you'll do something",
+    "accessibility": "Import Wallet",
+    "importMnemonic": {
+      "label": "Import Recovery Phrase",
+      "title": "Enter Your Secret Recovery Phrase",
+      "toast": "Incorrect recovery phrase."
+    },
+    "importPrivateKey": {
+      "title": "Import Private Key",
+      "addButtonAccessibility": "Retrieve account with private key",
+      "toast": "Incorrect private key."
+    },
+    "addPrivateKey": {
+      "title": "Enter Private Key",
+      "subtext": "Add an existing wallet with your private key.",
+      "privateKeyInputPlaceholder": "Enter private key"
+    }
+  },
+  "createPassword": {
+    "title": "Create a Password",
+    "subtext": "You will use this to unlock your wallet.",
+    "accessibility": "Create a Password",
+    "placeholder": {
+      "enterPassword": "Enter Password",
+      "confirmPassword": "Confirm Password"
+    },
+    "termsOfService": {
+      "text": "I agree to the ",
+      "localizedLink": {
+        "text": "Terms of Service",
+        "url": "https://petra.app/Wallet_Terms.pdf"
+      }
+    },
+    "faceId": {
+      "heading": "Turn on Face ID",
+      "subtext": "Once enabled, you will be able to unlock the app using Face ID.",
+      "notNow": "Not now",
+      "enable": "Enable Face ID"
+    }
+  },
+  "passwordEntry": {
+    "loginError": "Incorrect Password.  Please try again."
+  },
+  "resetPassword": {
+    "heading": "Are you sure you want to reset the password?",
+    "subtext": "PLEASE NOTE: You will not be able to recover your wallet account unless you have stored the private key or mnemonic associated with your wallet address."
+  },
+  "congratsFinish": {
+    "accountAlreadyExists": "Account already exists in wallet",
+    "mainText": "Congrats! You’re done!",
+    "subtext": "Get ready to enjoy your wallet.",
+    "agreeTerm": "By tapping Finish & Accept, you agree",
+    "toPetra": "to Petra’s",
+    "termsOfService": "Terms of Service.",
+    "finishAccept": "Finish & Accept",
+    "finish": "Finish",
+    "toast": {
+      "createAccountMnemonic": "Unable to create account with recovery phrase.",
+      "addAccountMnemonic": "Unable to add account with recovery phrase.",
+      "createAccountPrivateKey": "Unable to create account with private key.",
+      "addAccountPrivateKey": "Unable to add account with private key."
+    },
+    "error": {
+      "title": "Something went wrong.",
+      "message": "The development team has been notified of this error, but we have no way to reach out to discuss it.  Some causes include:",
+      "causeOne": "Poor internet connection:",
+      "solutionOne": "Please check your connection and try again.",
+      "causeTwo": "New app version required:",
+      "solutionTwo": "Please update your app and try again.",
+      "causeThree": "Phone compatibility:",
+      "solutionThree": "We restrict certain phone models for safety reasons.  This is very unlikely.",
+      "reachOut": {
+        "text": "Please reach out to us on Discord so we can help you troubleshoot your problem.",
+        "discordLink": "Discord Help Page"
+      },
+      "somethingWrongButRecoverable": "Something went wrong, but it should work if you kill your app and relaunch."
+    }
+  },
+  "recoveryPhrase": {
+    "title": "Save Your Secret Recovery Phrase",
+    "subtext": "This 12-word phrase keeps your account secure and allows you to access your account in the future.",
+    "boldText": "Be sure to save it in a secure place.",
+    "underlineText": "See tips on how to save this.",
+    "accessibility": "Secret Recovery Phrase",
+    "reveal": {
+      "tapToReveal": "Tap to reveal phrase",
+      "text": "OK, I Saved it Somewhere",
+      "copyToClipboard": "Copy to Clipboard",
+      "accessibility": "Reveal your secret recovery phrase",
+      "subtext": "Make sure no one can see your screen.",
+      "toast": "Secret Recovery Phrase Copied (1 minute)"
+    },
+    "recoveryPhraseInstructionModal": {
+      "title": "How to Save your Secret Recovery Phrase",
+      "safetyLevel": "Safety Level",
+      "gotIt": "Got it!",
+      "strong": "Strong",
+      "medium": "Medium",
+      "weak": "Weak",
+      "writeItDown": "Write it down on paper. Yep, paper. Keep it in a secure place.",
+      "typeDirectly": "Type this out directly in a trusted password manager.",
+      "takeScreenshot": "Take a screenshot and transfer it to a password manager or onto paper. Delete screenshot.",
+      "copyPhrase": "Copy to clipboard to transfer to a secure place like a password manager."
+    },
+    "keepRecoveryPhraseSafeModal": {
+      "title": "Keep Your Secret Recovery Phrase Safe",
+      "body": "If you lose your secret recovery phrase, you’ll have no way of accessing your assets. Not even the Petra team can help you recover it.",
+      "haveSavedRecoveryPhrase": "I’ve Saved My Recovery Phrase",
+      "showPhraseAgain": "Show Phrase Again"
+    }
+  },
+  "enterRecoveryPhrase": {
+    "title": "Show Us You Know It",
+    "subtext": "Select your phrase in the exact order it was displayed on the previous screen.",
+    "accessibility": "Select Secret Recovery Phrase",
+    "boldText": "We want to make sure you have this saved!",
+    "showAgain": "Show Phrase Again",
+    "clearAll": "Clear all",
+    "keepSafe": "Keep your phrase safe!",
+    "keepSafeWarning": "If you lose it you'll have no way of accessing your assets.",
+    "backToPhrases": "Back to Phrases",
+    "incorrectToast": "Incorrect phrase. Please try again."
+  },
+  "chooseAccountName": {
+    "title": "Choose Account Name",
+    "subtext": "Create a name for the your account to identify it easier. This name is private to you.",
+    "placeholder": "Enter account name",
+    "label": "Account Name"
+  },
+  "passwordHint": {
+    "strength": "Password strength: ",
+    "weak": "Weak",
+    "fair": "Fair",
+    "good": "Good",
+    "strong": "Strong"
+  },
+  "biometrics": {
+    "prompt": "Authenticate to access your account.",
+    "error": "Authentication Error",
+    "errorDescription": "There was an error authenticating. Please reenable your passcode in settings or try again.",
+    "retry": "Retry"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@petra/core/*": ["../../../packages/core/src/*"],
+      "core/*": ["../src/core/*"],
+      "shared/*": ["../src/shared/*"]
+    }
+  }
+}

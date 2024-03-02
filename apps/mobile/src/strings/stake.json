@@ -1,0 +1,215 @@
+{
+  "amountInput": {
+    "newAccountInfo": "New account will be created on-chain.",
+    "insufficientBalanceAndFee": "You must reserve enough APT for the transaction fee.",
+    "insufficientBalance": "Insufficient funds",
+    "lessThanMinimumAmount": "Minimum staking amount is {MIN_AMOUNT}"
+  },
+  "stakes": {
+    "activeStake": "Active Stake",
+    "activeStakeSubheading": "Rewards from each staking deposit.",
+    "attention": "Attention!",
+    "attentionMessage": "This validator is inactive, you are no longer receiving rewards. Please withdraw your stake.",
+    "errorMessage": "Error loading staking data",
+    "hidePastWithdrawals": "Hide Past Withdrawals",
+    "lifetimeRewards": "Lifetime Rewards",
+    "noData": "No data",
+    "readyToWithdraw": "Ready to Withdraw",
+    "readyToWithdrawSubheading": "Your APT is now available to transfer back to your account.",
+    "showPastWithdrawals": "Show Past Withdrawals",
+    "stakeCTA": "Stake",
+    "title": "Staking",
+    "totalStaked": "Total Staked",
+    "withdrawPending": "Withdraw Pending",
+    "withdrawPendingSubheading": "Your deposit will earn rewards until the next unlock date. After that, you can withdraw your APT."
+  },
+  "enterUnstakeAmount": {
+    "title": "Enter Unstake Amount",
+    "overMaximumStakeWarning": "The entered amount is above the staked amount",
+    "minimumUnstakeWarning": "A minimum of {AMOUNT} is needed to unstake. The unstake amount will be automatically adjusted to 10 APT",
+    "maximumUnstakeWarning": "A minimum of {AMOUNT} amount is needed to remain staked. We automatically will unstake the total amount",
+    "minMaximumUnstakeWarning": "A minimum of {AMOUNT_UNSTAKE} must be unstaked at a time, and a minimum of {AMOUNT_STAKE} is required to be staked, the entire amount will be unstaked."
+  },
+  "enterStakeAmount": {
+    "unavailableBalance": "Account balance is not available",
+    "title": "Enter Stake Amount"
+  },
+  "stakesDetails": {
+    "active": "Active Stake",
+    "withdrawPending": "Withdraw Pending",
+    "withdrawReady": "Withdraw Ready",
+    "rewardRate": "Staking Reward Rate (annual)",
+    "performanceRate": "Validator Performance Rate",
+    "commissionRate": "Validator Commission Rate",
+    "operatorAddress": "Operator Address",
+    "unstake": "Unstake",
+    "withdraw": "Withdraw",
+    "withdrawalAvailable": "Withdrawal Available",
+    "withdrawHelperText": "Withdrawal will be available in {DURATION}",
+    "withdrawHelperTextAvailableNow": "Withdrawal is now available",
+    "withdrawHelperTextSoon": "Withdrawal will be available soon",
+    "stakingRewardInfo": "Compound annual rewards rate that accrue on staked APT. Rewards are paid out by the network after each Epoch. The reward rate is subject to change based on validator performance or in accordance with network specifications. There is no guarantee that the current reward rate will continue to apply in future periods.",
+    "validatorPerformanceRateInfo": "Validator performance rate is the percentage of rewards the validator will receive, based upon proposal success. It is calculated as a % of reward received by the validator out of the maximum network reward opportunity. This is a cumulative metric across all epochs. Validators can improve their performance by improving their proposal success rate.",
+    "validatorCommissionRateInfo": "Percent of staking rewards paid out to the validator as a commission. The commission is deducted from the staking rewards you receive.",
+    "withdrawalAvailableInfo": "When tokens will be available for removal from the stake pool.",
+    "networkFeeInfo": "The gas fee to submit transactions on the Aptos blockchain",
+    "operatorAddressInfo": "The Aptos blockchain address that represents the operator’s staking pool.",
+    "totalRewards": "Total Rewards",
+    "attentionMessage": "This validator is inactive, you are no longer receiving rewards. Please withdraw your stake."
+  },
+  "faq": {
+    "staking": "Staking",
+    "whatIsStaking": "What is delegated staking?",
+    "whatIsStakingAnswerFirstParagraph": "Delegated staking is a feature that lets users participate in staking without becoming a validator themselves. Aptos is a proof-of-stake network which means that tokens are staked to validators in order to keep the network healthy.",
+    "whatIsStakingAnswerSecondParagraph": "As an APT holder, you can ‘delegate’ your APT to a validator delegation pool. The total delegation pool is an aggregation of staked APT from various token owners, and collectively staked.",
+    "whatIsStakingAnswerThirdParagraph": "When you delegate stake, you own the tokens and receive rewards on top of the staked amount. At no point does the validator have any access to your tokens as they remain securely in your control. The delegation smart contract has undergone security audit and thorough testing before launch.",
+    "whatIsStakingAnswerForthParagraph": "Petra and Aptos Labs do not offer staking services and do not have access to your tokens. The staking feature in Petra allows you to connect directly with the Aptos protocol to participate in staking with the network’s validators.",
+    "canAnyoneStake": "Can anyone stake APT?",
+    "canAnyoneStakeAnswer": "Yes, anyone can stake APT.",
+    "minimumStake": "Is there a minimum stake?",
+    "minimumStakeAnswer": "11 APT is the minimum required amount to stake, but you will see a slightly lower \"staked amount\" after you complete the transaction as some APT is deducted for gas fees.",
+    "howToStake": "How can I stake APT?",
+    "howToStakeAnswer": "You can stake APT directly in the Petra wallet",
+    "tapHereToBegin": "Tap here to begin",
+    "checkOnExplorer": "You can also check your staked APT on the ",
+    "explorer": "explorer page.",
+    "canIUnstake": "Can I unstake my APT anytime?",
+    "canIUnstakeAnswer": "You can unstake your APT at any time, but the APT will not be available until the next validator unlock date. The validator unlock period is 30 days, but the timing follows from when the delegation pool is initiated. Depending on when in the cycle you choose to unstake your APT, it could be as little as a few hours, or up to 30 days from whence you can withdraw your tokens. I.e. if you unstake 10 days into the 30 day cycle, you have to wait 20 days. If you unstake 18 days into the 30 day cycle, you have to wait 12 days. If you unstaked your tokens, and the unlock date has passed, you will be able to withdraw the tokens.",
+    "whenCanIWithdraw": "When can I withdraw my APT?",
+    "whenCanIWithdrawAnswerFirstParagraph": "There are two actions that you need to take: unstake and withdraw.",
+    "whenCanIWithdrawAnswerSecondParagraph": "You can withdraw unstaked APT at any time as long as it is unlocked. If you have staked APT, you will have to unstake first and wait for the APT to become unlocked. At that point in time, you can then withdraw it.",
+    "whenCanIWithdrawAnswerThirdParagraph": "You can see the unlock date by viewing your staked APT in Petra.",
+    "whatStatusedMean": "What do these statuses mean? (Staked, Withdraw Pending, Withdraw Ready)",
+    "whatStatusedMeanAnswerFirstParagraph": "Staked means the tokens are currently staked and locked up. These cannot be withdrawn until you have completed unstaking.",
+    "whatStatusedMeanAnswerSecondParagraph": "Withdraw Pending means you have initiated unstaking those tokens, but they are still locked up and you have to wait for the next unlock date. The APT cannot be withdrawn until then. You can check the unlock date for the validator  you have staked with by clicking on your staked APT in Petra.",
+    "whatStatusedMeanAnswerThirdParagraph": "Withdraw Ready means you can withdraw APT. When you unstake, all previously Withdraw Pending APT will be withdrawn and will be available back in your Petra wallet.",
+    "addStakeFee": "What is the add stake fee?",
+    "addStakeFeeAnswer": "You may see that the amount you have staked is less than the total stake you added. This is because you don’t start receiving rewards until the next epoch starts. This fee is returned at the end of the current epoch.",
+    "rewards": "Rewards",
+    "canValidatorChangeCommission": "Can the validator change their commission rate?",
+    "canValidatorChangeCommissionAnswer": "No, the commission rate cannot be changed.",
+    "stakingRewardExpectToReceive": "What staking reward can I expect to receive?",
+    "stakingRewardExpectToReceiveAnswer": "Staking rewards are calculated based on the amount of APT you have staked, multiplied by the current annual rewards rate and the validator rewards performance rate, minus the validator’s commission rate.",
+    "whenReceiveAward": "When do I start receiving rewards?",
+    "whenReceiveAwardAnswer": "You will start receiving rewards at the beginning of the next epoch. Epochs are the rewards cycle, and are currently 2 hours.",
+    "validators": "Validators",
+    "whatIsValidators": "What is a validator?",
+    "whatIsValidatorsAnswer": "Validator nodes confirm transactions by proposing and executing blocks on the network. The stake that they hold helps to prove that they are trusted to vote on transactions.",
+    "howDoIChooseValidator": "How do I choose a validator to stake with?",
+    "howDoIChooseValidatorAnswerFirstParagraph": "You can choose from the validator leaderboard on the explorer which shows the details about each validator including their performance rate and commission rate. Petra will also include some of this information during the staking workflow.",
+    "howDoIChooseValidatorAnswerSecondParagraph": "Validators start receiving rewards when the delegation pool has at least 1M APT. Only active validators will receive rewards.",
+    "howDoIChooseValidatorAnswerThirdParagraph": "However, please do your own research, Aptos Labs and Petra are not responsible for the veracity of the information displayed, nor responsible for the security of your funds, past or future performance of the validator node.",
+    "howIsValidatorPerformanceMeasured": "How is validator performance measured?",
+    "howIsValidatorPerformanceMeasuredAnswerFirstParagraph": "Validator performance rate is the percentage of rewards the validator will receive, based upon proposal success.",
+    "howIsValidatorPerformanceMeasuredAnswerSecondParagraph": "It is calculated as a % of reward received by the validator out of the maximum network reward opportunity.",
+    "howIsValidatorPerformanceMeasuredAnswerThirdParagraph": "This is a cumulative metric across all epochs. Validators can improve their performance by improving their proposal success rate."
+  },
+  "confirmStake": {
+    "nextUnlockDate": "Next Unlock Date",
+    "networkFee": "Network Fee",
+    "total": "Total",
+    "possibleRewards": "Possible Rewards",
+    "in30Days": "in 30 days",
+    "unlocksEvery30Days": "Unlocks every 30 days",
+    "unlocksEvery2Hours": "Unlocks every 2 hours",
+    "infoCard": "Remember you are staking with validator {ADDRESS}. At no point does Petra have control or access to your tokens.",
+    "terms": {
+      "withdrawlAvailable": {
+        "title": "Withdrawal Available",
+        "definition": "When tokens will be available for removal from the stake pool."
+      },
+      "networkFee": {
+        "title": "Network Fee",
+        "definition": "The gas fee to submit transactions on the Aptos blockchain"
+      }
+    }
+  },
+  "general": {
+    "possibleRewards": "Possible Rewards"
+  },
+  "selectPool": {
+    "title": "Select Staking Validator",
+    "searchPlaceholder": "Search validators...",
+    "advanced": "Advanced",
+    "simple": "Simple",
+    "simpleTable": {
+      "validatorColumnTitle": "Staking Validators",
+      "rewardsColumnTitle": "Possible Rewards",
+      "rewardsColumnSubtitle": "in 30 days"
+    },
+    "advancedTable": {
+      "commission": "Validator Commission Rate",
+      "performanceRate": "Performance Rate",
+      "totalDelegatedAmount": "Total Delegated Amount",
+      "totalDelegators": "Total Delegators",
+      "totalLifetimeRewards": "Total Lifetime Rewards",
+      "poolAddress": "Pool Address",
+      "monthlyRewards": "Your Monthly Rewards (est.)",
+      "monthlyRewardsSubtitle": "Excludes the Commission"
+    },
+    "sortSheet": {
+      "title": "Sort by",
+      "projected": "Better projected rewards",
+      "stakedAmount": "Staked amount",
+      "commission": "Lowest commission",
+      "lifetimeRewards": "Lifetime rewards",
+      "numDelegators": "Number of delegators",
+      "sort": "Sort",
+      "enableInactive": "Show Inactive",
+      "disableInactive": "Hide Inactive"
+    }
+  },
+  "possibleRewardsSheet": {
+    "title": "Possible Rewards",
+    "description": "Possible rewards are calculated based on the amount of APT you have staked, multiplied by the current annual rewards rate and the validator rewards performance rate, minus the validator's commission rate.",
+    "possibleRewards": "Your Possible Monthly Rewards",
+    "rewardRate": "Staking Reward Rate",
+    "performanceRate": "Validator Performance Rate",
+    "commissionRate": "Validator Commission Rate"
+  },
+  "firstTimeStakeSheet": {
+    "title": "Support Aptos decentralization by staking APT and get up to",
+    "subtitle": "in staking rewards for securing the network.",
+    "fineText1": "Petra enables you to stake directly with the Aptos protocol through the network validators.",
+    "fineText2": "Staking rewards depend on the validator's performance and  commission fees.",
+    "fineText3": "A minimum of 11 APT is required to stake.",
+    "learnMore": "Learn more"
+  },
+  "confirmUnstakeSheet": {
+    "title": "Confirm unstake",
+    "subtitle": "Do you want to unstake {AMOUNT}?",
+    "description": "You will stop receiving rewards. Your unstaked amount will be available to withdraw at the end of the lock period on {DATE}.",
+    "unstake": "Unstake"
+  },
+  "terminal": {
+    "done": "Done",
+    "stake-success": {
+      "title": "Successfully staked!"
+    },
+    "stake-error": {
+      "title": "Stake Failed",
+      "subTitle": "Error occurred when staking APT."
+    },
+    "unstake-success": {
+      "title": "Successfully unstaked",
+      "description": "Your APT will be available to withdraw on {DATE} at the end of the lock period."
+    },
+    "withdraw-success": {
+      "title": "Successfully withdrawn"
+    }
+  },
+  "homeScreenStakeCard": {
+    "title": "Staking",
+    "totalStaked": "Total Staked",
+    "active": "ACTIVE",
+    "withdraw": "Withdraw",
+    "readyToWithdraw": {
+      "singular": "Your deposit is ready to withdraw!",
+      "plural": "You have {COUNT} deposits that are ready to withdraw! "
+    },
+    "pendingWithdraw": {
+      "singular": "You have a deposit that will be ready to withdraw on {DATE}.",
+      "plural": "You have {COUNT} deposits ready to withdraw starting {DATE}"
+    }
+  }
+}

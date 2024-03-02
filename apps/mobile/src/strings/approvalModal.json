@@ -1,0 +1,28 @@
+{
+  "connect": {
+    "heading": "Connection Request",
+    "permission1": "View your wallet balance & activity.",
+    "permission2": "Request approval for transactions.",
+    "noFeeDisclaimer": "This request will not trigger a blockchain transaction or cost any network fees.",
+    "disclaimer": "Only connect to websites that you trust."
+  },
+  "signTransaction": {
+    "heading": "Signature Request",
+    "detailsTitle": "Transaction preview:",
+    "function": "Function",
+    "noCoinChange": "No change in coins or tokens.",
+    "genericResourceChange": "Some resources were changed, please see below for more details.",
+    "networkFee": "Network Fee",
+    "disclaimer": "Only sign this message if you fully understand the content and trust the requesting site."
+  },
+  "signMessage": {
+    "heading": "Signature Request",
+    "detailsTitle": "You are signing:",
+    "disclaimer": "Only sign this message if you fully understand the content and trust the requesting site."
+  },
+  "common": {
+    "addressUsed": "Address used",
+    "approve": "Approve",
+    "reject": "Reject"
+  }
+}

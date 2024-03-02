@@ -1,0 +1,8 @@
+rootProject.name = 'Wallet'
+apply from: file("../../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+includeBuild('../../../node_modules/react-native-gradle-plugin')
+// lottie crashing on android, followed the troubleshooting steps from their github:
+// https://github.com/lottie-react-native/lottie-react-native#android-specific-problems
+include ':lottie-react-native'
+project(':lottie-react-native').projectDir = new File(rootProject.projectDir, '../../../node_modules/lottie-react-native/src/android')

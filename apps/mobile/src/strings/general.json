@@ -1,0 +1,108 @@
+{
+  "account": "Account",
+  "add": "Add",
+  "apt": "APT",
+  "balance": "Balance:",
+  "cancel": "Cancel",
+  "close": "Close",
+  "confirm": "Confirm",
+  "continue": "Continue",
+  "done": "Done",
+  "next": "Next",
+  "oneMoment": "One moment...",
+  "profiles": "Profiles",
+  "password": "Password",
+  "passwordPlaceholder": "Password...",
+  "resetPassword": "Reset password",
+  "submit": "Submit",
+  "to": "To:",
+  "skip": "Skip",
+  "toLowercase": "to",
+  "unableToOpenLink": "Unable to open: ",
+  "unlock": "Unlock",
+  "unlockHint": "After entering password, unlock",
+  "welcomeBack": "Welcome back",
+  "yesIUnderstand": "Yes, I understand",
+  "explorePlaceholder": "Search or type URL",
+  "exploreTopDapps": "Top Dapps",
+  "exploreHistory": "History",
+  "by": "by",
+  "max": "Max",
+  "from": "from",
+  "tryAgain": "Something went wrong. Please try again later.",
+  "oops": "Oops",
+  "fees": "Fees",
+  "remove": "Remove",
+  "forgot": "Forgot",
+  "forgotPassword": "Forgot Password?",
+  "ok": "OK",
+  "explore": "Explore",
+  "apps": "Apps",
+  "available": "Available",
+  "version": "Version",
+  "results": "Results",
+  "stake": "Stake",
+  "unstake": "Unstake",
+  "of": "of",
+  "renfield": {
+    "title": "Renfield Import",
+    "description": "Do you want to import your Renfield account?",
+    "success": "Renfield account imported successfully!"
+  },
+  "exploreCards": {
+    "names": {
+      "title": "Create Your Aptos Name"
+    },
+    "safe": {
+      "title": "Staying Safe in Crypto",
+      "body": "Learn how to stay safe in crypto and how to quickly and securely set up an account."
+    },
+    "transactions": {
+      "title": "Your Transactions",
+      "body": "Since"
+    },
+    "nfts": {
+      "title": "Your Collection",
+      "body": "Total NFTs"
+    }
+  },
+  "scanner": {
+    "invalidQRCode": "The link you are using is invalid",
+    "invalidQRCodeAddress": "The account address you are sending to is invalid",
+    "share": "Share",
+    "myQRCode": "My QR Code",
+    "showQR": "Show my QR code",
+    "scanQrTo": "Scan QR Code to",
+    "sendFriends": "Send APT to your Friends",
+    "sendFriendsDescription": "Point your smartphone at a friend’s QR code to get their address",
+    "shareMessage": "Share your account address with someone in order to receive assets from them"
+  },
+  "networkBanner": {
+    "action": {
+      "loading": "Switching...",
+      "text": "Switch to Mainnet"
+    },
+    "successToast": "Switched to Mainnet",
+    "unswitchableAlert": {
+      "title": "Cannot Switch While {{ACTION}}",
+      "body": "You can switch networks by exiting the {{ACTION}} Flow. Do you want to exit {{ACTION}} Flow to switch to Mainnet?",
+      "exitOption": "Exit {{ACTION}} Flow",
+      "continueOnTestnet": "Continue on Testnet"
+    }
+  },
+  "filters": {
+    "buttonLabel": "Filter",
+    "modalTitle": "Filter by",
+    "primaryButtonLabel": "Apply"
+  },
+  "blockedSite": {
+    "title": "Site Blocked",
+    "message": "This site has been blocked while we investigate."
+  },
+  "timeUntil": {
+    "dayAbbreviation": "d",
+    "hourAbbreviation": "h",
+    "minuteAbbreviation": "m",
+    "secondAbbreviation": "s"
+  }
+}

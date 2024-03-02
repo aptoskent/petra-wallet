@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@petra/core/*": ["../../packages/core/src/*"],
+      "*": ["src/*"]
+    }
+  }
+}

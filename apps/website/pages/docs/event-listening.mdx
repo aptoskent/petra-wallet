@@ -1,0 +1,63 @@
+---
+title: 'Event Listening'
+slug: 'event-listening'
+---
+
+# Event Listening
+
+## onNetworkChange() and network()
+
+A dApp may want to make sure a user is on the right network. In this case, you will need to check what network the wallet is using.
+
+Default networks provided by the Petra wallet:
+
+```typescript
+// default networks in the wallet
+enum Network {
+  Testnet = 'Testnet',
+  Mainnet = 'Mainnet',
+  Devnet = 'Devnet',
+}
+
+// Current network
+let network = await window.aptos.network();
+
+// event listener for network changing
+window.aptos.onNetworkChange((newNetwork) => {
+  network = newNetwork;
+});
+```
+
+## onAccountChange()
+
+In Petra, a user may change accounts while interacting with your app. To check for these events, listen for them with: `onAccountChange`
+
+```typescript
+// get current account
+let currentAccount = await window.aptos.account();
+
+// event listener for disconnecting
+window.aptos.onAccountChange((newAccount) => {
+  // If the new account has already connected to your app then the newAccount will be returned
+  if (newAccount) {
+    currentAccount = newAccount;
+  } else {
+    // Otherwise you will need to ask to connect to the new account
+    currentAccount = window.aptos.connect();
+  }
+});
+```
+
+# onDisconnect()
+
+A user may choose to disconnect from your dApp. In that case, you will want to update your state.
+
+```typescript
+// get current connection status
+let connectionStatus = await window.aptos.isConnected();
+
+// event listener for disconnecting
+window.aptos.onDisconnect(() => {
+  connectionStatus = false;
+});
+```

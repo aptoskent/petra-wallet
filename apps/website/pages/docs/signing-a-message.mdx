@@ -1,0 +1,79 @@
+---
+title: 'Signing Messages'
+slug: 'signing-a-message'
+---
+
+# Signing Messages
+
+A web app can also request the user to sign a message, by using Petra API: `wallet.signMessage(payload: SignMessagePayload)`
+
+Web apps can write their own message and then send it to Petra. The user will be prompted to sign that message, and then the signed message will be returned to the web app.
+
+The following is provided for additional security.
+
+- `signMessage(payload: SignMessagePayload)` prompts the user with the `payload.message` to be signed
+  - returns `Promise<SignMessageResponse>`
+
+Types:
+
+```typescript
+export interface SignMessagePayload {
+  address?: boolean; // Should we include the address of the account in the message
+  application?: boolean; // Should we include the domain of the dapp
+  chainId?: boolean; // Should we include the current chain id the wallet is connected to
+  message: string; // The message to be signed and displayed to the user
+  nonce: string; // A nonce the dapp should generate
+}
+
+export interface SignMessageResponse {
+  address: string;
+  application: string;
+  chainId: number;
+  fullMessage: string; // The message that was generated to sign
+  message: string; // The message passed in by the user
+  nonce: string;
+  prefix: string; // Should always be APTOS
+  signature: string; // The signed full message
+}
+```
+
+## Example message and response
+
+`signMessage({nonce: 1234034, message: "Welcome to dapp!" })`
+
+This would generate the `fullMessage` to be signed and returned as the `signature`:
+
+```typescript
+APTOS
+nonce: 1234034
+message: Welcome to dapp!
+```
+
+## Verifying a signature
+
+The most common use case for signing a message is to verify ownership of a private resource.
+
+```typescript
+import nacl from 'tweetnacl';
+
+const message = 'hello';
+const nonce = 'random_string';
+
+try {
+  const response = await window.aptos.signMessage({
+    message,
+    nonce,
+  });
+  const { publicKey } = await window.aptos.account();
+  // Remove the 0x prefix
+  const key = publicKey!.slice(2, 66);
+  const verified = nacl.sign.detached.verify(
+    Buffer.from(response.fullMessage),
+    Buffer.from(response.signature, 'hex'),
+    Buffer.from(key, 'hex'),
+  );
+  console.log(verified);
+} catch (error) {
+  console.error(error);
+}
+```

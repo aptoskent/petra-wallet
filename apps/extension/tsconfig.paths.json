@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@petra/core/*": ["../../../packages/core/src/*"],
+      "@petra/indexer-client/*": ["../../../packages/indexer-client/src/*"],
+      "lang/*": ["../lang/*"],
+      "compiled-lang/*": ["../compiled-lang/*"],
+      "test-precise": ["../test-precise"],
+      "test-multiple/*/*": ["../test-multiple/*/*"],
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "petra",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "generate": "turbo run generate",
+    "build": "turbo run build",
+    "build:website": "turbo run build:website",
+    "export": "turbo run export",
+    "dev": "turbo run dev --parallel",
+    "start-extension": "turbo run start --scope=extension",
+    "start": "turbo run start --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "e2e": "yarn build && yarn playwright test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-env-vars": "chmod +x ./.husky/check_env_vars.sh && ./.husky/check_env_vars.sh",
+    "remove-node-modules": "find . -name node_modules -exec rm -rf {} \\;",
+    "postinstall": "patch-package",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@petra/eslint-config": "*",
+    "@petra/eslint-plugin": "*",
+    "@petra/prettier-config": "*",
+    "@playwright/test": "^1.30.0",
+    "appium": "1.22.3",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.21.0",
+    "husky": "^8.0.0",
+    "prettier": "latest",
+    "syncpack": "^8.4.11",
+    "turbo": "latest",
+    "typescript": "^4.8.4"
+  },
+  "prettier": "@petra/prettier-config",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.18",
+  "resolutions": {
+    "@noble/hashes": "1.2.0",
+    "@keystonehq/bc-ur-registry-aptos": "0.2.6",
+    "json5": "^2.2.3",
+    "react-native-svg": "13.5.0",
+    "typescript": "4.9.4"
+  },
+  "dependencies": {
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}

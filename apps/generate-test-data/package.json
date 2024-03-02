@@ -1,0 +1,19 @@
+{
+  "name": "@petra/generate-test-data",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "mint-nft": "ts-node src/commands/mint-nft.ts"
+  },
+  "devDependencies": {
+    "@petra/eslint-config": "*",
+    "@petra/tsconfig": "*",
+    "eslint": "^8.33.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "aptos": "1.13.3",
+    "commander": "^10.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

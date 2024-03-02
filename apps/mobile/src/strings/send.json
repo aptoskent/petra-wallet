@@ -1,0 +1,10 @@
+{
+  "amountInput": {
+    "newAccountInfo": "New account will be created on-chain.",
+    "insufficientBalance": "Insufficient balance, please try another."
+  },
+  "confirmation": {
+    "newAccountWarningTitle": "Account Not Yet Found",
+    "newAccountWarningText": "You’re sending APT to a new account. This account will be created on-chain. Be sure you have the right address."
+  }
+}

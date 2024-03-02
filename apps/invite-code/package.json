@@ -1,0 +1,34 @@
+{
+  "name": "invite-code",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230307.0",
+    "@databases/split-sql-query": "1.0.3",
+    "@databases/sql": "3.2.0",
+    "@types/jest": "^29.4.0",
+    "jest": "^29.5.0",
+    "node-fetch": "^3.3.1",
+    "prisma": "^4.11.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.9.5",
+    "wrangler": "2.1.15"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --local-protocol http --local --persist",
+    "dev:https": "wrangler dev --local-protocol https --local --persist",
+    "lint": "prettier --check src",
+    "lint:fix": "prettier --write src && eslint --cache ./src --fix",
+    "deploy": "wrangler publish",
+    "deploy:prod": "wrangler publish --env production",
+    "db:migrate": "rm -rf prisma/migrations/; npx prisma migrate dev; cp prisma/dev.db .wrangler/state/d1/DB.sqlite3;",
+    "db:init-tables": "sqlite3 .wrangler/state/d1/DB.sqlite3 < prisma/migrations/20230330160247_init/migration.sql",
+    "db:studio": "npx prisma studio",
+    "db:wrangler-execute": "wrangler d1 execute invite-code --file prisma/migrations/20230330160247_init/migration.sql"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "aptos": "1.13.3",
+    "hono": "^3.0.3"
+  }
+}

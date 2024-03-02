@@ -1,0 +1,2626 @@
+{
+  "+Dl0TV": [
+    {
+      "type": 0,
+      "value": "You must agree to the Terms of Service"
+    }
+  ],
+  "+KGP3K": [
+    {
+      "type": 0,
+      "value": "On-Chain Properties"
+    }
+  ],
+  "+KdPIM": [
+    {
+      "type": 0,
+      "value": "Account not found, will be created"
+    }
+  ],
+  "+MyXqr": [
+    {
+      "type": 0,
+      "value": "Function not found in module, likely cause is you are unable to transfer alt coins to an uninitialized account"
+    }
+  ],
+  "+RJ7d7": [
+    {
+      "type": 0,
+      "value": "Sorry! Your NFT is not loading. Please refresh the browser and try again"
+    }
+  ],
+  "+RUpou": [
+    {
+      "type": 0,
+      "value": "Change Wallet Name"
+    }
+  ],
+  "+U6ozc": [
+    {
+      "type": 0,
+      "value": "Type"
+    }
+  ],
+  "+p8iOV": [
+    {
+      "type": 0,
+      "value": "Adding a custom coin will submit an on-chain transcation and will require a gas fee."
+    }
+  ],
+  "+xTpT1": [
+    {
+      "type": 0,
+      "value": "Attributes"
+    }
+  ],
+  "/0TOL5": [
+    {
+      "type": 0,
+      "value": "Amount"
+    }
+  ],
+  "/6/sPX": [
+    {
+      "type": 0,
+      "value": "Docs"
+    }
+  ],
+  "/IafdD": [
+    {
+      "type": 0,
+      "value": "Transaction simulation is loading..."
+    }
+  ],
+  "/KMYI7": [
+    {
+      "type": 0,
+      "value": "Stake balance"
+    }
+  ],
+  "/OjrJH": [
+    {
+      "type": 0,
+      "value": "Faucet"
+    }
+  ],
+  "/U+Weh": [
+    {
+      "type": 0,
+      "value": "Follow us on social media or check out our docs for more info"
+    }
+  ],
+  "/bPBKN": [
+    {
+      "type": 0,
+      "value": "Registering "
+    },
+    {
+      "type": 1,
+      "value": "coinName"
+    },
+    {
+      "type": 0,
+      "value": " will submit an on-chain transaction and will require a gas fee."
+    }
+  ],
+  "/mNh9B": [
+    {
+      "type": 0,
+      "value": "Gas unit price (in octa)"
+    }
+  ],
+  "/mOCkD": [
+    {
+      "type": 0,
+      "value": "Uri"
+    }
+  ],
+  "/uLmeW": [
+    {
+      "type": 0,
+      "value": "Your offers received, and pending collectibles sent will show up here."
+    }
+  ],
+  "/vixtE": [
+    {
+      "type": 0,
+      "value": "Passwords must match"
+    }
+  ],
+  "/xro5W": [
+    {
+      "type": 0,
+      "value": "Accept offer"
+    }
+  ],
+  "/yNxKS": [
+    {
+      "type": 0,
+      "value": "No selected path"
+    }
+  ],
+  "07Xf2y": [
+    {
+      "type": 0,
+      "value": "Back to settings"
+    }
+  ],
+  "0Azlrb": [
+    {
+      "type": 0,
+      "value": "Manage"
+    }
+  ],
+  "0CKvMV": [
+    {
+      "type": 0,
+      "value": "Arweave, IPFS, or S3 uri"
+    }
+  ],
+  "0OsmA+": [
+    {
+      "type": 0,
+      "value": "Cancel offer"
+    }
+  ],
+  "0QyN8c": [
+    {
+      "type": 0,
+      "value": "Offer:"
+    }
+  ],
+  "0SMaoR": [
+    {
+      "type": 0,
+      "value": "On Aptos, you can rotate your private key while your account address stays the same. This increases the chances of keeping your assets safe."
+    }
+  ],
+  "0cEOKu": [
+    {
+      "type": 0,
+      "value": "Advanced options"
+    }
+  ],
+  "0gKhg9": [
+    {
+      "type": 0,
+      "value": "Show phrase again"
+    }
+  ],
+  "0mCO14": [
+    {
+      "type": 0,
+      "value": "A network with this name already exists"
+    }
+  ],
+  "0oL1zz": [
+    {
+      "type": 0,
+      "value": "Copied!"
+    }
+  ],
+  "0qt8i+": [
+    {
+      "type": 0,
+      "value": "New browsers / Device"
+    }
+  ],
+  "0rIM5R": [
+    {
+      "type": 0,
+      "value": "Remove Account"
+    }
+  ],
+  "1+ROfp": [
+    {
+      "type": 0,
+      "value": "Transaction"
+    }
+  ],
+  "1ehETW": [
+    {
+      "type": 0,
+      "value": "Max gas fee"
+    }
+  ],
+  "1hsG1y": [
+    {
+      "type": 0,
+      "value": "No coin balance changes"
+    }
+  ],
+  "1q+kPa": [
+    {
+      "type": 0,
+      "value": "Import account"
+    }
+  ],
+  "1yBD5+": [
+    {
+      "type": 0,
+      "value": "Show Private Key"
+    }
+  ],
+  "2+wBKg": [
+    {
+      "type": 0,
+      "value": "NFTs sent as an Offer will need to be claimed by the recipient"
+    }
+  ],
+  "2/2yg+": [
+    {
+      "type": 0,
+      "value": "Add"
+    }
+  ],
+  "2HiGEM": [
+    {
+      "type": 0,
+      "value": "Token name cannot be empty"
+    }
+  ],
+  "2JIC6P": [
+    {
+      "type": 0,
+      "value": "Are you sure you want to reset the password?"
+    }
+  ],
+  "2LbrkB": [
+    {
+      "type": 0,
+      "value": "Enter password"
+    }
+  ],
+  "2MN1aB": [
+    {
+      "type": 0,
+      "value": "Rotate"
+    }
+  ],
+  "2WMWKa": [
+    {
+      "type": 0,
+      "value": "Welcome to Petra"
+    }
+  ],
+  "2oCaym": [
+    {
+      "type": 0,
+      "value": "Are you sure?"
+    }
+  ],
+  "32rBNK": [
+    {
+      "type": 0,
+      "value": "Terms of Service"
+    }
+  ],
+  "34Up+l": [
+    {
+      "type": 0,
+      "value": "View more"
+    }
+  ],
+  "37xGo5": [
+    {
+      "type": 0,
+      "value": "Supply"
+    }
+  ],
+  "3HepmQ": [
+    {
+      "type": 0,
+      "value": "Symbol"
+    }
+  ],
+  "3NVilE": [
+    {
+      "type": 0,
+      "value": "Yes, rotate key"
+    }
+  ],
+  "3hbWR7": [
+    {
+      "type": 0,
+      "value": "No attributes"
+    }
+  ],
+  "3qdYsK": [
+    {
+      "type": 0,
+      "value": "Gas unit price"
+    }
+  ],
+  "3u93Cp": [
+    {
+      "type": 0,
+      "value": "Other assets are coins that we have not verified as legitimate"
+    }
+  ],
+  "3wsVWF": [
+    {
+      "type": 0,
+      "value": "Cancelled"
+    }
+  ],
+  "3yf2ND": [
+    {
+      "type": 0,
+      "value": "Operator"
+    }
+  ],
+  "3zIgrc": [
+    {
+      "type": 0,
+      "value": "Your new secret recovery phrase"
+    }
+  ],
+  "47FYwb": [
+    {
+      "type": 0,
+      "value": "Cancel"
+    }
+  ],
+  "4fPELu": [
+    {
+      "type": 0,
+      "value": "Function"
+    }
+  ],
+  "4huas4": [
+    {
+      "type": 0,
+      "value": "View hidden ("
+    },
+    {
+      "type": 1,
+      "value": "count"
+    },
+    {
+      "type": 0,
+      "value": ")"
+    }
+  ],
+  "4l6vz1": [
+    {
+      "type": 0,
+      "value": "Copy"
+    }
+  ],
+  "4nooaV": [
+    {
+      "type": 0,
+      "value": "How long should we wait to lock your wallet after no activity?"
+    }
+  ],
+  "50u8OR": [
+    {
+      "type": 0,
+      "value": "Click to reveal phrase"
+    }
+  ],
+  "57Aa5/": [
+    {
+      "type": 0,
+      "value": "Token Amount"
+    }
+  ],
+  "5DsFkA": [
+    {
+      "type": 0,
+      "value": "View all activity"
+    }
+  ],
+  "5Nw04W": [
+    {
+      "type": 0,
+      "value": "Rotating Key for "
+    },
+    {
+      "type": 1,
+      "value": "account"
+    }
+  ],
+  "5lVaeB": [
+    {
+      "type": 0,
+      "value": "No description"
+    }
+  ],
+  "5sg7KC": [
+    {
+      "type": 0,
+      "value": "Password"
+    }
+  ],
+  "6N9V2n": [
+    {
+      "type": 0,
+      "value": "Gas Fees"
+    }
+  ],
+  "6UA+0K": [
+    {
+      "type": 0,
+      "value": "Coin already registered with the current account. Please register a different coin"
+    }
+  ],
+  "6t5jEX": [
+    {
+      "type": 0,
+      "value": "Direct Transfer:"
+    }
+  ],
+  "7K9jKV": [
+    {
+      "type": 0,
+      "value": "Manage Account"
+    }
+  ],
+  "8Rkoyb": [
+    {
+      "type": 0,
+      "value": "Recipient"
+    }
+  ],
+  "8b7fVW": [
+    {
+      "type": 0,
+      "value": "Simulation failed. Please correct coin information and try again. Error message: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "8qcqcC": [
+    {
+      "type": 0,
+      "value": "Request approval for transactions"
+    }
+  ],
+  "8vHfd9": [
+    {
+      "type": 0,
+      "value": "Offered to:"
+    }
+  ],
+  "9+Ddtu": [
+    {
+      "type": 0,
+      "value": "Next"
+    }
+  ],
+  "93kR60": [
+    {
+      "type": 0,
+      "value": "Buy with CC, bank transfers or Apple Pay."
+    }
+  ],
+  "98E9fa": [
+    {
+      "type": 0,
+      "value": "Reinstall your extension"
+    }
+  ],
+  "9RFhNn": [
+    {
+      "type": 0,
+      "value": "OTHER ASSETS"
+    }
+  ],
+  "9WRlF4": [
+    {
+      "type": 0,
+      "value": "Send"
+    }
+  ],
+  "9XUYQt": [
+    {
+      "type": 0,
+      "value": "Import"
+    }
+  ],
+  "9j3hXO": [
+    {
+      "type": 0,
+      "value": "To"
+    }
+  ],
+  "9l9Gbt": [
+    {
+      "type": 0,
+      "value": "Approve with "
+    },
+    {
+      "type": 1,
+      "value": "account"
+    }
+  ],
+  "A1y3T3": [
+    {
+      "type": 0,
+      "value": "Claimed"
+    }
+  ],
+  "A41QIy": [
+    {
+      "type": 0,
+      "value": "Enter Password"
+    }
+  ],
+  "A6ozr9": [
+    {
+      "type": 0,
+      "value": "Collection name"
+    }
+  ],
+  "A7OxM6": [
+    {
+      "type": 0,
+      "value": "Make sure that nobody can see your screen."
+    }
+  ],
+  "Ad1PHL": [
+    {
+      "type": 0,
+      "value": "Time: "
+    },
+    {
+      "type": 1,
+      "value": "timestamp"
+    }
+  ],
+  "AkkKj2": [
+    {
+      "type": 0,
+      "value": "Cancel this offer"
+    }
+  ],
+  "AmOKGr": [
+    {
+      "type": 0,
+      "value": "NFTs sent as a Direct Transfer will be automatically received by the recipient. (If you don't see this as an option it means the recipient has not opted into receiving Direct Transfers.)"
+    }
+  ],
+  "AqEnT3": [
+    {
+      "type": 0,
+      "value": "Arguments:"
+    }
+  ],
+  "BSTKRJ": [
+    {
+      "type": 0,
+      "value": "Normal view"
+    }
+  ],
+  "Bep/gA": [
+    {
+      "type": 0,
+      "value": "Private key"
+    }
+  ],
+  "BgkMNG": [
+    {
+      "type": 0,
+      "value": "Recipient address does not exist"
+    }
+  ],
+  "Bo334N": [
+    {
+      "type": 0,
+      "value": "Swap"
+    }
+  ],
+  "C+wlYf": [
+    {
+      "type": 0,
+      "value": "For the transaction depend on the type of transfer"
+    }
+  ],
+  "C7gMoZ": [
+    {
+      "type": 0,
+      "value": "Waiting for confirmed details"
+    }
+  ],
+  "C7mqam": [
+    {
+      "type": 0,
+      "value": "Select the transport type for your Ledger device."
+    }
+  ],
+  "COyZTM": [
+    {
+      "type": 0,
+      "value": "To "
+    },
+    {
+      "type": 1,
+      "value": "recipient"
+    }
+  ],
+  "CPvyYN": [
+    {
+      "type": 0,
+      "value": "Incorrect password"
+    }
+  ],
+  "Ck29+3": [
+    {
+      "type": 0,
+      "value": "Wallet Address"
+    }
+  ],
+  "CyU4o6": [
+    {
+      "type": 0,
+      "value": "Switch to Mainnet"
+    }
+  ],
+  "D3idYv": [
+    {
+      "type": 0,
+      "value": "Settings"
+    }
+  ],
+  "D4hk2Y": [
+    {
+      "type": 0,
+      "value": "Please enter an address"
+    }
+  ],
+  "D6UU7g": [
+    {
+      "type": 0,
+      "value": "Add Network"
+    }
+  ],
+  "DUjcof": [
+    {
+      "type": 0,
+      "value": "No stake yet!"
+    }
+  ],
+  "DYwfZQ": [
+    {
+      "type": 0,
+      "value": "Show secret recovery phrase"
+    }
+  ],
+  "DaRYRV": [
+    {
+      "type": 0,
+      "value": "Confirm Send"
+    }
+  ],
+  "DhesJE": [
+    {
+      "type": 0,
+      "value": "Changing this setting will submit an on-chain transaction and will require a gas fee."
+    }
+  ],
+  "E/LOhX": [
+    {
+      "type": 0,
+      "value": "in the upper right and"
+    }
+  ],
+  "E0Tesa": [
+    {
+      "type": 0,
+      "value": "Successfully removed account "
+    },
+    {
+      "type": 1,
+      "value": "account"
+    }
+  ],
+  "EBV294": [
+    {
+      "type": 0,
+      "value": "Petra"
+    }
+  ],
+  "EDzR9u": [
+    {
+      "type": 0,
+      "value": "Types:"
+    }
+  ],
+  "EWdpO3": [
+    {
+      "type": 0,
+      "value": "Delivery Method"
+    }
+  ],
+  "Ejz7ig": [
+    {
+      "type": 0,
+      "value": "View on "
+    },
+    {
+      "type": 1,
+      "value": "storageProvider"
+    }
+  ],
+  "EnCOBJ": [
+    {
+      "type": 0,
+      "value": "Buy"
+    }
+  ],
+  "Eyi7qo": [
+    {
+      "type": 0,
+      "value": "Withdrew"
+    }
+  ],
+  "F3l7xL": [
+    {
+      "type": 0,
+      "value": "Add Account"
+    }
+  ],
+  "FFKIHh": [
+    {
+      "type": 0,
+      "value": "minutes"
+    }
+  ],
+  "Flx4zl": [
+    {
+      "type": 0,
+      "value": "No properties"
+    }
+  ],
+  "FoGGWd": [
+    {
+      "type": 0,
+      "value": "Successfully opted in to direct transfer of NFTs"
+    }
+  ],
+  "FvanT6": [
+    {
+      "type": 0,
+      "value": "Accounts"
+    }
+  ],
+  "FvmV6q": [
+    {
+      "type": 0,
+      "value": "Discord"
+    }
+  ],
+  "G/yZLu": [
+    {
+      "type": 0,
+      "value": "Remove"
+    }
+  ],
+  "G3j8yb": [
+    {
+      "type": 0,
+      "value": "Transaction simulation unsuccessful"
+    }
+  ],
+  "G9uF7o": [
+    {
+      "type": 0,
+      "value": "from"
+    }
+  ],
+  "GJrUd7": [
+    {
+      "type": 0,
+      "value": "Access an existing wallet with your private key."
+    }
+  ],
+  "GZo7vg": [
+    {
+      "type": 0,
+      "value": "See less"
+    }
+  ],
+  "GhkQ9R": [
+    {
+      "type": 0,
+      "value": "Gas used"
+    }
+  ],
+  "H6HEUX": [
+    {
+      "type": 0,
+      "value": "Advanced view"
+    }
+  ],
+  "HAlOn1": [
+    {
+      "type": 0,
+      "value": "Name"
+    }
+  ],
+  "HLZ9CC": [
+    {
+      "type": 0,
+      "value": "Credentials"
+    }
+  ],
+  "HW4PTc": [
+    {
+      "type": 0,
+      "value": "Petra Version: "
+    },
+    {
+      "type": 1,
+      "value": "version"
+    }
+  ],
+  "HfCZj9": [
+    {
+      "type": 0,
+      "value": "Your NFT was sent to"
+    }
+  ],
+  "HwLwTa": [
+    {
+      "type": 0,
+      "value": "Rotate your private key"
+    }
+  ],
+  "I3JhPS": [
+    {
+      "type": 0,
+      "value": "Network"
+    }
+  ],
+  "I3b4hn": [
+    {
+      "type": 0,
+      "value": "Version"
+    }
+  ],
+  "IIl7gF": [
+    {
+      "type": 0,
+      "value": "Between you"
+    }
+  ],
+  "It0qSm": [
+    {
+      "type": 0,
+      "value": "Select address"
+    }
+  ],
+  "J7VlyX": [
+    {
+      "type": 0,
+      "value": "Speculos"
+    }
+  ],
+  "JXdbo8": [
+    {
+      "type": 0,
+      "value": "Done"
+    }
+  ],
+  "Ja2DYD": [
+    {
+      "type": 0,
+      "value": "Before proceeding, make sure you follow these instructions:"
+    }
+  ],
+  "JjNn3d": [
+    {
+      "type": 0,
+      "value": "Raw writeset"
+    }
+  ],
+  "JqVGWR": [
+    {
+      "type": 0,
+      "value": "Import wallet"
+    }
+  ],
+  "JrVgsW": [
+    {
+      "type": 0,
+      "value": "Copy address"
+    }
+  ],
+  "JymXbw": [
+    {
+      "type": 0,
+      "value": "Private Key"
+    }
+  ],
+  "K0ovbl": [
+    {
+      "type": 0,
+      "value": "Waiting for confirmed details..."
+    }
+  ],
+  "K6Wl+Z": [
+    {
+      "type": 0,
+      "value": "Function:"
+    }
+  ],
+  "K7AkdL": [
+    {
+      "type": 0,
+      "value": "Show"
+    }
+  ],
+  "KBeQsL": [
+    {
+      "type": 0,
+      "value": "Connected Apps"
+    }
+  ],
+  "KoLHDI": [
+    {
+      "type": 0,
+      "value": "Token address"
+    }
+  ],
+  "KvqCr1": [
+    {
+      "type": 0,
+      "value": "Rotate Key"
+    }
+  ],
+  "L4nXIc": [
+    {
+      "type": 0,
+      "value": "Change password"
+    }
+  ],
+  "LISAAB": [
+    {
+      "type": 0,
+      "value": "Are you sure you want to remove "
+    },
+    {
+      "type": 1,
+      "value": "network"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "LUkqzS": [
+    {
+      "type": 0,
+      "value": "Mutated Token"
+    }
+  ],
+  "LjNvmm": [
+    {
+      "type": 0,
+      "value": "Deposited"
+    }
+  ],
+  "Lv0zJu": [
+    {
+      "type": 0,
+      "value": "Details"
+    }
+  ],
+  "Lvbvmp": [
+    {
+      "type": 0,
+      "value": "This app would like to:"
+    }
+  ],
+  "M/fMrs": [
+    {
+      "type": 0,
+      "value": "Error fetching pending offers for token "
+    },
+    {
+      "type": 1,
+      "value": "tokenName"
+    }
+  ],
+  "MH9Dua": [
+    {
+      "type": 0,
+      "value": "Recipient address is invalid"
+    }
+  ],
+  "MJ2jZQ": [
+    {
+      "type": 0,
+      "value": "Total"
+    }
+  ],
+  "N2IrpM": [
+    {
+      "type": 0,
+      "value": "Confirm"
+    }
+  ],
+  "N4ReBT": [
+    {
+      "type": 0,
+      "value": "View Details"
+    }
+  ],
+  "NCf98L": [
+    {
+      "type": 0,
+      "value": "Import from Ledger"
+    }
+  ],
+  "NIynnB": [
+    {
+      "type": 0,
+      "value": "Current password"
+    }
+  ],
+  "NLeFGn": [
+    {
+      "type": 0,
+      "value": "to"
+    }
+  ],
+  "NNoady": [
+    {
+      "type": 0,
+      "value": "Loading user's on-chain data. Please wait..."
+    }
+  ],
+  "NT4oNW": [
+    {
+      "type": 0,
+      "value": "View on explorer"
+    }
+  ],
+  "NrVzeo": [
+    {
+      "type": 0,
+      "value": "Error occured when claiming token offer from"
+    }
+  ],
+  "O+Skg2": [
+    {
+      "type": 0,
+      "value": "You'll use this to unlock your wallet"
+    }
+  ],
+  "O/ZLSa": [
+    {
+      "type": 0,
+      "value": "Enter mnemonic/private key"
+    }
+  ],
+  "O8cjsZ": [
+    {
+      "type": 0,
+      "value": "No assets yet!"
+    }
+  ],
+  "OABRr6": [
+    {
+      "type": 0,
+      "value": "Error fetching token activity"
+    }
+  ],
+  "OKy/1E": [
+    {
+      "type": 0,
+      "value": "All of your transactions and dApp interactions will show up here."
+    }
+  ],
+  "ON8AbY": [
+    {
+      "type": 0,
+      "value": "Enter mnemonic"
+    }
+  ],
+  "Ost4Tm": [
+    {
+      "type": 0,
+      "value": "From "
+    },
+    {
+      "type": 1,
+      "value": "sender"
+    }
+  ],
+  "P+EtTU": [
+    {
+      "type": 0,
+      "value": "Wallet recovery scenarios"
+    }
+  ],
+  "P/3qxH": [
+    {
+      "type": 0,
+      "value": "The offer was accepted!"
+    }
+  ],
+  "P7PLVj": [
+    {
+      "type": 0,
+      "value": "Date"
+    }
+  ],
+  "P8kbJD": [
+    {
+      "type": 0,
+      "value": "Locked until "
+    },
+    {
+      "type": 1,
+      "value": "unlockDate"
+    }
+  ],
+  "PHGyGk": [
+    {
+      "type": 0,
+      "value": "You can now close this page and return to the extension."
+    }
+  ],
+  "PHmOrs": [
+    {
+      "type": 0,
+      "value": "NFT Name"
+    }
+  ],
+  "PPucx+": [
+    {
+      "type": 0,
+      "value": "Please enter all spaces for mnemonic"
+    }
+  ],
+  "PW6N9T": [
+    {
+      "type": 0,
+      "value": "Loading max gas fee..."
+    }
+  ],
+  "PdBvV5": [
+    {
+      "type": 0,
+      "value": "Create a collectible"
+    }
+  ],
+  "PhUUVD": [
+    {
+      "type": 0,
+      "value": "Network fee: "
+    },
+    {
+      "type": 1,
+      "value": "networkFee"
+    }
+  ],
+  "PoizHJ": [
+    {
+      "type": 0,
+      "value": "Pending offers"
+    }
+  ],
+  "PuU15u": [
+    {
+      "type": 0,
+      "value": "Not connected"
+    }
+  ],
+  "Q8Qw5B": [
+    {
+      "type": 0,
+      "value": "Description"
+    }
+  ],
+  "Qe72S4": [
+    {
+      "type": 0,
+      "value": "Error occurred when opting out of direct transfer NFTs"
+    }
+  ],
+  "QxCD8j": [
+    {
+      "type": 0,
+      "value": "Learn more about key rotation"
+    }
+  ],
+  "R+J5ox": [
+    {
+      "type": 0,
+      "value": "Review"
+    }
+  ],
+  "R89fgM": [
+    {
+      "type": 0,
+      "value": "Successfully added "
+    },
+    {
+      "type": 1,
+      "value": "coinName"
+    },
+    {
+      "type": 0,
+      "value": " to wallet"
+    }
+  ],
+  "RAol2O": [
+    {
+      "type": 0,
+      "value": "Failed to fetch user's on-chain data. Please refresh and try again"
+    }
+  ],
+  "RahCRH": [
+    {
+      "type": 0,
+      "value": "Expired"
+    }
+  ],
+  "Rlrwui": [
+    {
+      "type": 0,
+      "value": "Loading amount..."
+    }
+  ],
+  "RrCui3": [
+    {
+      "type": 0,
+      "value": "Summary"
+    }
+  ],
+  "RwVi3u": [
+    {
+      "type": 0,
+      "value": "Copy private key"
+    }
+  ],
+  "S5tBcz": [
+    {
+      "type": 0,
+      "value": "Stake"
+    }
+  ],
+  "SENRqu": [
+    {
+      "type": 0,
+      "value": "Help"
+    }
+  ],
+  "SNT2Ue": [
+    {
+      "type": 0,
+      "value": "Unable to estimate gas fee"
+    }
+  ],
+  "SOYmp1": [
+    {
+      "type": 0,
+      "value": "Coin transfer"
+    }
+  ],
+  "SaiF/n": [
+    {
+      "type": 0,
+      "value": "Coin mint"
+    }
+  ],
+  "StcK67": [
+    {
+      "type": 0,
+      "value": "Library"
+    }
+  ],
+  "T/0DcU": [
+    {
+      "type": 0,
+      "value": "Account not found."
+    }
+  ],
+  "T5kbhl": [
+    {
+      "type": 0,
+      "value": "Rotating your private key will generate a new secret recovery phrase."
+    }
+  ],
+  "T7Ry38": [
+    {
+      "type": 0,
+      "value": "Message"
+    }
+  ],
+  "TI8tRS": [
+    {
+      "type": 0,
+      "value": "Minted"
+    }
+  ],
+  "Tsvef3": [
+    {
+      "type": 0,
+      "value": "Cancel Offer"
+    }
+  ],
+  "TwyMau": [
+    {
+      "type": 0,
+      "value": "Account"
+    }
+  ],
+  "U71ECB": [
+    {
+      "type": 0,
+      "value": "Transaction simulation errored"
+    }
+  ],
+  "U8QBHO": [
+    {
+      "type": 0,
+      "value": "By"
+    }
+  ],
+  "UBWAfV": [
+    {
+      "type": 0,
+      "value": "Gas unit price entered is invalid or too high, must be less than 20,000 OCTA"
+    }
+  ],
+  "UHoglJ": [
+    {
+      "type": 0,
+      "value": "No collectibles yet."
+    }
+  ],
+  "UNinVQ": [
+    {
+      "type": 0,
+      "value": "ALL COINS"
+    }
+  ],
+  "UPGW9b": [
+    {
+      "type": 0,
+      "value": "Network fee"
+    }
+  ],
+  "UWGfjh": [
+    {
+      "type": 0,
+      "value": "Add Custom Coin"
+    }
+  ],
+  "UWuQ8m": [
+    {
+      "type": 0,
+      "value": "Account added successfully."
+    }
+  ],
+  "UdOBQs": [
+    {
+      "type": 0,
+      "value": "Welcome back"
+    }
+  ],
+  "UsLZes": [
+    {
+      "type": 0,
+      "value": "Create a password"
+    }
+  ],
+  "Uz+LeN": [
+    {
+      "type": 0,
+      "value": "Approve cancellation"
+    }
+  ],
+  "V4ICwp": [
+    {
+      "type": 0,
+      "value": "ASSETS"
+    }
+  ],
+  "V7FBO0": [
+    {
+      "type": 0,
+      "value": "Remove "
+    },
+    {
+      "type": 1,
+      "value": "account"
+    },
+    {
+      "type": 0,
+      "value": " ?"
+    }
+  ],
+  "V9ArUb": [
+    {
+      "type": 0,
+      "value": "Copy timestamp"
+    }
+  ],
+  "VA/Z1S": [
+    {
+      "type": 0,
+      "value": "Hide"
+    }
+  ],
+  "VhTbuw": [
+    {
+      "type": 0,
+      "value": "RECENT ACTIVITY"
+    }
+  ],
+  "VzzYJk": [
+    {
+      "type": 0,
+      "value": "Create"
+    }
+  ],
+  "W/f6jp": [
+    {
+      "type": 0,
+      "value": "NFT will show up as 'Pending'. The recipient then has to accept the NFT so that it can be deposited into their wallet"
+    }
+  ],
+  "W4dA14": [
+    {
+      "type": 0,
+      "value": "Secret Recovery Phrase"
+    }
+  ],
+  "W7l9pP": [
+    {
+      "type": 0,
+      "value": "No connected apps"
+    }
+  ],
+  "W83XBB": [
+    {
+      "type": 0,
+      "value": "The transaction has been sent"
+    }
+  ],
+  "WCaf5C": [
+    {
+      "type": 0,
+      "value": "Approve"
+    }
+  ],
+  "WExVSr": [
+    {
+      "type": 0,
+      "value": "Gallery"
+    }
+  ],
+  "WzAYkN": [
+    {
+      "type": 0,
+      "value": "REGISTERED"
+    }
+  ],
+  "X3cPZu": [
+    {
+      "type": 0,
+      "value": "Error fetching pending token offers & claims"
+    }
+  ],
+  "X4X6MC": [
+    {
+      "type": 0,
+      "value": "Keep your phrase safe!"
+    }
+  ],
+  "XAOpEZ": [
+    {
+      "type": 0,
+      "value": "Show Secret Recovery Phrase"
+    }
+  ],
+  "XJND8b": [
+    {
+      "type": 0,
+      "value": "Balance changes"
+    }
+  ],
+  "Xiq62I": [
+    {
+      "type": 0,
+      "value": "Allow anyone to send you NFTs"
+    }
+  ],
+  "Y1iRas": [
+    {
+      "type": 0,
+      "value": "Create password"
+    }
+  ],
+  "YClwP1": [
+    {
+      "type": 0,
+      "value": "Too long"
+    }
+  ],
+  "YHe3JR": [
+    {
+      "type": 0,
+      "value": "Accept this offer"
+    }
+  ],
+  "YrVSj3": [
+    {
+      "type": 0,
+      "value": "New private key"
+    }
+  ],
+  "Yy/yDL": [
+    {
+      "type": 0,
+      "value": "Reset password"
+    }
+  ],
+  "Z657Gc": [
+    {
+      "type": 0,
+      "value": "Network Fee"
+    }
+  ],
+  "Z8971h": [
+    {
+      "type": 0,
+      "value": "Verified"
+    }
+  ],
+  "ZE5nvr": [
+    {
+      "type": 0,
+      "value": "Your NFT offer to"
+    }
+  ],
+  "ZFYXC/": [
+    {
+      "type": 0,
+      "value": "Faucet URL (optional)"
+    }
+  ],
+  "ZmlNQ3": [
+    {
+      "type": 0,
+      "value": "Activity"
+    }
+  ],
+  "ZvtAoY": [
+    {
+      "type": 0,
+      "value": "Other people can automatically airdrop NFTs into your wallet without you needing to accept them."
+    }
+  ],
+  "a5msuh": [
+    {
+      "type": 0,
+      "value": "Yes"
+    }
+  ],
+  "a73NeU": [
+    {
+      "type": 0,
+      "value": "This 12-word phrase allows you to recover your wallet and access to the coins inside."
+    }
+  ],
+  "aL8o+1": [
+    {
+      "type": 0,
+      "value": "Gas fees:"
+    }
+  ],
+  "acrOoz": [
+    {
+      "type": 0,
+      "value": "Continue"
+    }
+  ],
+  "aojEGT": [
+    {
+      "type": 0,
+      "value": "No activity yet"
+    }
+  ],
+  "at5WZw": [
+    {
+      "type": 0,
+      "value": "Check out these marketplaces to get your first Aptos NFTs."
+    }
+  ],
+  "bDXUOC": [
+    {
+      "type": 0,
+      "value": "Enter private key"
+    }
+  ],
+  "bM2XEJ": [
+    {
+      "type": 0,
+      "value": "Token symbol cannot be empty"
+    }
+  ],
+  "bTxN/J": [
+    {
+      "type": 0,
+      "value": "Enter wallet name"
+    }
+  ],
+  "bW7B87": [
+    {
+      "type": 0,
+      "value": "New"
+    }
+  ],
+  "bX6XM8": [
+    {
+      "type": 0,
+      "value": "This is what you use to receive funds."
+    }
+  ],
+  "bj0Mez": [
+    {
+      "type": 0,
+      "value": "Offered"
+    }
+  ],
+  "bkM6S+": [
+    {
+      "type": 0,
+      "value": "Successfully opted out of direct transfer of NFTs"
+    }
+  ],
+  "bmo5gN": [
+    {
+      "type": 0,
+      "value": "Collectibles"
+    }
+  ],
+  "cDveFM": [
+    {
+      "type": 0,
+      "value": "Delivery Methods"
+    }
+  ],
+  "cDwFID": [
+    {
+      "type": 0,
+      "value": "Invalid address"
+    }
+  ],
+  "cGPdyw": [
+    {
+      "type": 0,
+      "value": "Official"
+    }
+  ],
+  "cKzera": [
+    {
+      "type": 0,
+      "value": "Next: Go to"
+    }
+  ],
+  "cS2S73": [
+    {
+      "type": 0,
+      "value": "PLEASE NOTE: You will not be able to recover your wallet account unless you have stored the private key or mnemonic associated with your wallet address."
+    }
+  ],
+  "cU42T7": [
+    {
+      "type": 0,
+      "value": "Add another account"
+    }
+  ],
+  "cjrJV5": [
+    {
+      "type": 0,
+      "value": "Enter private key here"
+    }
+  ],
+  "cqZqGK": [
+    {
+      "type": 0,
+      "value": "cancel"
+    }
+  ],
+  "cyR7Kh": [
+    {
+      "type": 0,
+      "value": "Back"
+    }
+  ],
+  "d19HEG": [
+    {
+      "type": 0,
+      "value": "Name is too long"
+    }
+  ],
+  "dCK+iq": [
+    {
+      "type": 0,
+      "value": "Password strength must be at least \"strong\""
+    }
+  ],
+  "dGlNTc": [
+    {
+      "type": 0,
+      "value": "Add coin to wallet"
+    }
+  ],
+  "dLXHwc": [
+    {
+      "type": 0,
+      "value": "Please enter a valid private key"
+    }
+  ],
+  "dM+p3/": [
+    {
+      "type": 0,
+      "value": "From"
+    }
+  ],
+  "dPRUFg": [
+    {
+      "type": 0,
+      "value": "A network with this nodeUrl already exists"
+    }
+  ],
+  "dUz4UZ": [
+    {
+      "type": 0,
+      "value": "Enter Your Secret Recovery Phrase"
+    }
+  ],
+  "dX7+Rv": [
+    {
+      "type": 0,
+      "value": "Confirmed"
+    }
+  ],
+  "ddpv6U": [
+    {
+      "type": 0,
+      "value": "Error loading aggregator"
+    }
+  ],
+  "djJp6c": [
+    {
+      "type": 0,
+      "value": "History"
+    }
+  ],
+  "dqQE9k": [
+    {
+      "type": 0,
+      "value": "Offer"
+    }
+  ],
+  "e6Ph5+": [
+    {
+      "type": 0,
+      "value": "Address"
+    }
+  ],
+  "eCSA01": [
+    {
+      "type": 0,
+      "value": "Create New Wallet"
+    }
+  ],
+  "eKEL/g": [
+    {
+      "type": 0,
+      "value": "Pending"
+    }
+  ],
+  "eLelJ8": [
+    {
+      "type": 0,
+      "value": "Apps connected to your Petra wallet will show up here."
+    }
+  ],
+  "eeTr1V": [
+    {
+      "type": 0,
+      "value": "Import mnemonic"
+    }
+  ],
+  "ejEGdx": [
+    {
+      "type": 0,
+      "value": "Home"
+    }
+  ],
+  "fe7Y2Z": [
+    {
+      "type": 0,
+      "value": "Confirm new password"
+    }
+  ],
+  "g2iaEu": [
+    {
+      "type": 0,
+      "value": "Gas fee"
+    }
+  ],
+  "gA56us": [
+    {
+      "type": 0,
+      "value": "From: "
+    },
+    {
+      "type": 1,
+      "value": "sender"
+    }
+  ],
+  "gcuDcH": [
+    {
+      "type": 0,
+      "value": "Sent"
+    }
+  ],
+  "hcWAUP": [
+    {
+      "type": 1,
+      "value": "gasAmount"
+    },
+    {
+      "type": 0,
+      "value": " gas units"
+    }
+  ],
+  "hk3zDE": [
+    {
+      "type": 0,
+      "value": "Insert the PIN to unlock"
+    }
+  ],
+  "hrSvUF": [
+    {
+      "type": 0,
+      "value": "Custom network"
+    }
+  ],
+  "huqKGl": [
+    {
+      "type": 0,
+      "value": "Create account"
+    }
+  ],
+  "iHZhfn": [
+    {
+      "type": 0,
+      "value": "Error message: "
+    },
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "iXNbPf": [
+    {
+      "type": 0,
+      "value": "Rename"
+    }
+  ],
+  "idfL7G": [
+    {
+      "type": 0,
+      "value": "Successfully added "
+    },
+    {
+      "type": 1,
+      "value": "coinName"
+    },
+    {
+      "type": 0,
+      "value": " to your coins"
+    }
+  ],
+  "ikPf7q": [
+    {
+      "type": 0,
+      "value": "Max gas units"
+    }
+  ],
+  "imu9hb": [
+    {
+      "type": 0,
+      "value": "Error occurred when opting in to direct transfer NFTs"
+    }
+  ],
+  "iwnsQT": [
+    {
+      "type": 0,
+      "value": "pin the Petra wallet to your browser"
+    }
+  ],
+  "j9ckyi": [
+    {
+      "type": 0,
+      "value": "Although you are removing this from your Aptos wallet, you'll be able to retrieve if using your mnemonic phrase."
+    }
+  ],
+  "jecC36": [
+    {
+      "type": 0,
+      "value": "Public key"
+    }
+  ],
+  "jqPCOM": [
+    {
+      "type": 0,
+      "value": "Raw events"
+    }
+  ],
+  "jvo0vs": [
+    {
+      "type": 0,
+      "value": "Save"
+    }
+  ],
+  "jxBuJZ": [
+    {
+      "type": 0,
+      "value": "Copy secret recovery phrase"
+    }
+  ],
+  "k5EoJ8": [
+    {
+      "type": 0,
+      "value": "Security and Privacy"
+    }
+  ],
+  "kF9XUo": [
+    {
+      "type": 0,
+      "value": "Timestamp"
+    }
+  ],
+  "kJ5W29": [
+    {
+      "type": 0,
+      "value": "You"
+    }
+  ],
+  "kWYt10": [
+    {
+      "type": 0,
+      "value": "Manage Assets"
+    }
+  ],
+  "kb/1kq": [
+    {
+      "type": 0,
+      "value": "Import private key"
+    }
+  ],
+  "klIU5R": [
+    {
+      "type": 0,
+      "value": "If you lose it you'll have no way of accessing your assets."
+    }
+  ],
+  "l/WZz6": [
+    {
+      "type": 0,
+      "value": "Import type"
+    }
+  ],
+  "lDx4W+": [
+    {
+      "type": 0,
+      "value": "Gas fees"
+    }
+  ],
+  "lKcMQZ": [
+    {
+      "type": 0,
+      "value": "Guiding your web3 journey."
+    }
+  ],
+  "lUhsY2": [
+    {
+      "type": 0,
+      "value": "Connection request"
+    }
+  ],
+  "lWbObc": [
+    {
+      "type": 0,
+      "value": "Create Wallet"
+    }
+  ],
+  "lfG/+z": [
+    {
+      "type": 0,
+      "value": "Add custom coin to wallet"
+    }
+  ],
+  "lnu/UI": [
+    {
+      "type": 0,
+      "value": "Failed retrieving collectibles"
+    }
+  ],
+  "m7ySr1": [
+    {
+      "type": 0,
+      "value": "Open the Aptos nano app"
+    }
+  ],
+  "mKJujO": [
+    {
+      "type": 0,
+      "value": "Account added"
+    }
+  ],
+  "mNbOVG": [
+    {
+      "type": 0,
+      "value": "go back"
+    }
+  ],
+  "mNjlJV": [
+    {
+      "type": 0,
+      "value": "Node is not available"
+    }
+  ],
+  "mPY8Yb": [
+    {
+      "type": 0,
+      "value": "Gas fee: "
+    },
+    {
+      "type": 1,
+      "value": "gasFee"
+    }
+  ],
+  "me1nR+": [
+    {
+      "type": 0,
+      "value": "Copy Address"
+    }
+  ],
+  "mgArrI": [
+    {
+      "type": 0,
+      "value": "Error occured when adding "
+    },
+    {
+      "type": 1,
+      "value": "coinName"
+    },
+    {
+      "type": 0,
+      "value": " to wallet"
+    }
+  ],
+  "nDH9FN": [
+    {
+      "type": 0,
+      "value": "Yes, I understand"
+    }
+  ],
+  "nucW7E": [
+    {
+      "type": 0,
+      "value": "Add a wallet address"
+    }
+  ],
+  "o14Wdp": [
+    {
+      "type": 0,
+      "value": "Auto-lock Timer"
+    }
+  ],
+  "oAh3TU": [
+    {
+      "type": 0,
+      "value": "Password..."
+    }
+  ],
+  "oTzn0m": [
+    {
+      "type": 0,
+      "value": "Metadata storage"
+    }
+  ],
+  "p1P+hQ": [
+    {
+      "type": 0,
+      "value": "Request"
+    }
+  ],
+  "p4mBmL": [
+    {
+      "type": 0,
+      "value": "Created by"
+    }
+  ],
+  "p556q3": [
+    {
+      "type": 0,
+      "value": "Copied"
+    }
+  ],
+  "pMJdXF": [
+    {
+      "type": 0,
+      "value": "To: "
+    },
+    {
+      "type": 1,
+      "value": "recipient"
+    }
+  ],
+  "pd5KiZ": [
+    {
+      "type": 0,
+      "value": "Transaction Summary"
+    }
+  ],
+  "phAZoj": [
+    {
+      "type": 0,
+      "value": "Collection"
+    }
+  ],
+  "phTfBA": [
+    {
+      "type": 0,
+      "value": "Create new account"
+    }
+  ],
+  "piGHex": [
+    {
+      "type": 0,
+      "value": "Balance: "
+    },
+    {
+      "type": 1,
+      "value": "balance"
+    },
+    {
+      "type": 0,
+      "value": ", fees: "
+    },
+    {
+      "type": 1,
+      "value": "fees"
+    }
+  ],
+  "ptIaAV": [
+    {
+      "type": 0,
+      "value": "Some resources were changed, please see the events and writeset below for more details"
+    }
+  ],
+  "q5Xl0M": [
+    {
+      "type": 0,
+      "value": "Verify"
+    }
+  ],
+  "qJcduu": [
+    {
+      "type": 0,
+      "value": "Add account"
+    }
+  ],
+  "qVGRIE": [
+    {
+      "type": 0,
+      "value": "Quantity"
+    }
+  ],
+  "qXCbgZ": [
+    {
+      "type": 0,
+      "value": "Unlock"
+    }
+  ],
+  "qa6BVK": [
+    {
+      "type": 0,
+      "value": "approve"
+    }
+  ],
+  "qfRzkp": [
+    {
+      "type": 0,
+      "value": "Amount must not be negative"
+    }
+  ],
+  "qgxVNm": [
+    {
+      "type": 0,
+      "value": "Hidden offers"
+    }
+  ],
+  "qkQcMI": [
+    {
+      "type": 0,
+      "value": "Approve transaction"
+    }
+  ],
+  "qtgWzm": [
+    {
+      "type": 1,
+      "value": "coinSymbol"
+    },
+    {
+      "type": 0,
+      "value": " CoinStore is not registered for recipient"
+    }
+  ],
+  "r6zf4H": [
+    {
+      "type": 0,
+      "value": "Remove account"
+    }
+  ],
+  "rIAJlE": [
+    {
+      "type": 0,
+      "value": "Added"
+    }
+  ],
+  "rStR4L": [
+    {
+      "type": 0,
+      "value": "Import Wallet"
+    }
+  ],
+  "rX9zPz": [
+    {
+      "type": 0,
+      "value": "Buy APT"
+    }
+  ],
+  "raBTZk": [
+    {
+      "type": 0,
+      "value": "please check your connection"
+    }
+  ],
+  "rbrahO": [
+    {
+      "type": 0,
+      "value": "Close"
+    }
+  ],
+  "rf7C5T": [
+    {
+      "type": 1,
+      "value": "token"
+    },
+    {
+      "type": 0,
+      "value": " was successfully claimed from "
+    },
+    {
+      "type": 1,
+      "value": "account"
+    }
+  ],
+  "rlE/qx": [
+    {
+      "type": 0,
+      "value": "Select a derivation path or an address from below"
+    }
+  ],
+  "sQ4R9E": [
+    {
+      "type": 0,
+      "value": "View your balance and activity"
+    }
+  ],
+  "sUywsf": [
+    {
+      "type": 0,
+      "value": "No pending offers"
+    }
+  ],
+  "sjzLbX": [
+    {
+      "type": 0,
+      "value": "Accept"
+    }
+  ],
+  "snX6Nd": [
+    {
+      "type": 0,
+      "value": "Signature request"
+    }
+  ],
+  "tC2rTu": [
+    {
+      "type": 0,
+      "value": "A description of your collection"
+    }
+  ],
+  "tFriEi": [
+    {
+      "type": 0,
+      "value": "Transaction error"
+    }
+  ],
+  "tVyT4P": [
+    {
+      "type": 0,
+      "value": "Token address cannot be empty"
+    }
+  ],
+  "tWuHTb": [
+    {
+      "type": 0,
+      "value": "Please open the extension and create an account."
+    }
+  ],
+  "tZRQET": [
+    {
+      "type": 0,
+      "value": "Error occured when cancelling token offer to"
+    }
+  ],
+  "tnRDuU": [
+    {
+      "type": 0,
+      "value": "Revoke"
+    }
+  ],
+  "tqO+QF": [
+    {
+      "type": 0,
+      "value": "was successfully canceled"
+    }
+  ],
+  "tzMNF3": [
+    {
+      "type": 0,
+      "value": "Status"
+    }
+  ],
+  "uDbS3L": [
+    {
+      "type": 0,
+      "value": "Transaction Successful"
+    }
+  ],
+  "uT4OlP": [
+    {
+      "type": 0,
+      "value": "Fee"
+    }
+  ],
+  "ug/Ph4": [
+    {
+      "type": 0,
+      "value": "Connect your Ledger device to your computer"
+    }
+  ],
+  "urmEDH": [
+    {
+      "type": 0,
+      "value": "Pair with Ledger"
+    }
+  ],
+  "uy4mGe": [
+    {
+      "type": 0,
+      "value": "Auto-Lock Timer"
+    }
+  ],
+  "v+3pqk": [
+    {
+      "type": 0,
+      "value": "No token left"
+    }
+  ],
+  "v14Bg2": [
+    {
+      "type": 0,
+      "value": "Direct Transfer"
+    }
+  ],
+  "v7Trp+": [
+    {
+      "type": 0,
+      "value": "Add custom coin"
+    }
+  ],
+  "vDFzIP": [
+    {
+      "type": 0,
+      "value": "Remove network"
+    }
+  ],
+  "vXCeIi": [
+    {
+      "type": 0,
+      "value": "Failed"
+    }
+  ],
+  "vZO4p4": [
+    {
+      "type": 0,
+      "value": "Transaction details"
+    }
+  ],
+  "vZp6iw": [
+    {
+      "type": 0,
+      "value": "Recipient:"
+    }
+  ],
+  "vckBAj": [
+    {
+      "type": 0,
+      "value": "Error occured when adding "
+    },
+    {
+      "type": 1,
+      "value": "coinName"
+    },
+    {
+      "type": 0,
+      "value": " to your coins"
+    }
+  ],
+  "vfG+nh": [
+    {
+      "type": 0,
+      "value": "Confirm Password"
+    }
+  ],
+  "vwxnZO": [
+    {
+      "type": 0,
+      "value": "Voter"
+    }
+  ],
+  "vzrmKt": [
+    {
+      "type": 0,
+      "value": "Receiving NFTs"
+    }
+  ],
+  "wB0dbT": [
+    {
+      "type": 0,
+      "value": "Send token"
+    }
+  ],
+  "wBJT4Y": [
+    {
+      "type": 0,
+      "value": "I agree to the "
+    },
+    {
+      "type": 1,
+      "value": "termsOfService"
+    }
+  ],
+  "wLQ/u0": [
+    {
+      "type": 0,
+      "value": "Secret recovery phrase"
+    }
+  ],
+  "wSZR47": [
+    {
+      "type": 0,
+      "value": "Submit"
+    }
+  ],
+  "wVz0n0": [
+    {
+      "type": 0,
+      "value": "Error occured while sending transaction"
+    }
+  ],
+  "x0kFWC": [
+    {
+      "type": 0,
+      "value": "Welcome to your wallet"
+    }
+  ],
+  "xHmh0Y": [
+    {
+      "type": 0,
+      "value": "No pending token offers & claims"
+    }
+  ],
+  "xQXSru": [
+    {
+      "type": 0,
+      "value": "Token name"
+    }
+  ],
+  "xfsBG7": [
+    {
+      "type": 0,
+      "value": "(Metadata structure)"
+    }
+  ],
+  "xmcVZ0": [
+    {
+      "type": 0,
+      "value": "Search"
+    }
+  ],
+  "xrKHS6": [
+    {
+      "type": 0,
+      "value": "Success"
+    }
+  ],
+  "yAFIOD": [
+    {
+      "type": 0,
+      "value": "Amount is over balance (balance is "
+    },
+    {
+      "type": 1,
+      "value": "balance"
+    }
+  ],
+  "yWzZDh": [
+    {
+      "type": 0,
+      "value": "🎉 You're all done!"
+    }
+  ],
+  "yh9Dql": [
+    {
+      "type": 0,
+      "value": "Loading number amount..."
+    }
+  ],
+  "yoLwRW": [
+    {
+      "type": 0,
+      "value": "See more"
+    }
+  ],
+  "yw7Pt7": [
+    {
+      "type": 0,
+      "value": "HID"
+    }
+  ],
+  "yzcfnV": [
+    {
+      "type": 0,
+      "value": "Can submit"
+    }
+  ],
+  "z+/crE": [
+    {
+      "type": 0,
+      "value": "Error loading aggregator for coin swap. Please refresh and try again."
+    }
+  ],
+  "z/wUXE": [
+    {
+      "type": 0,
+      "value": "Received"
+    }
+  ],
+  "z8oOG0": [
+    {
+      "type": 0,
+      "value": "Offer canceled."
+    }
+  ]
+}

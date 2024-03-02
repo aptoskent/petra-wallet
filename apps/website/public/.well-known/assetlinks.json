@@ -1,0 +1,12 @@
+[{
+	"relation": ["delegate_permission/common.handle_all_urls"],
+	"target": {
+		"namespace": "android_app",
+		"package_name": "com.aptoslabs.petra.wallet",
+		"sha256_cert_fingerprints": [
+			"44:4F:D5:6A:0C:2E:73:CE:51:47:1D:69:F1:08:44:F0:6B:F6:C1:A4:EC:97:80:B4:B4:49:70:E2:6E:F3:F4:02",
+			"EC:6E:75:66:94:32:2B:21:78:1C:0C:5A:7B:CD:3F:00:D3:BC:32:05:C0:0C:44:F5:10:F6:93:92:62:CA:C3:4F",
+			"50:C1:C0:0B:12:88:1C:EE:99:A1:22:3B:76:03:10:B6:75:77:CE:B4:64:24:36:86:75:56:99:D9:71:FF:24:DB"
+		]
+	}
+}]

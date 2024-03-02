@@ -1,0 +1,8 @@
+# JetBrains GraphQL extension config
+.graphqlconfig
+indexer-schema.graphql
+
+# graphql-codegen generated code
+src/generated/
+
+dist/

@@ -1,0 +1,157 @@
+---
+title: 'Using Petra'
+slug: 'use'
+---
+
+import { Callout } from 'nextra-theme-docs';
+
+# Using the Petra Wallet
+
+This page describes common uses of the Petra web interface. If you haven't already, install the Petra extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfci).
+
+See [Install Petra Extension](https://aptos.dev/guides/install-petra-wallet-extension) for additional guidance, such as [pinning the extension](https://support.google.com/chrome/a/answer/11190170) to make it findable by Petra button in your Chrome browser toolbar.
+
+<Callout type="info">
+  Because the Petra Wallet is browser based, you should open a dedicated browser
+  window to load it and understand the wallet will lose state when you focus
+  away from that window.
+</Callout>
+
+## Create a new wallet
+
+After installing the wallet extension and launching it, create a wallet:
+
+1. Click **Create new wallet**.
+1. Enter a strong password conntaining at least eight characters, one uppercase letter, one lowercase letter, one number, and one special character.
+1. Confirm the password.
+1. Accept the terms of service.
+1. Click **Continue**.
+1. On the _Secret recovery phrase_ screen, click the gray box to see the secret recovery phrase (mnemonic).
+1. Click **Copy** to add the recovery phrase to your clipboard.
+1. Enter (paste) the recovery phrase to continue setting up your wallet.
+1. Store the recovery phrase in case you reinstall the extension or get a new device.
+1. Click **Done** to finish creating your wallet.
+
+![Create new wallet](/petra-create-wallet.png)
+
+## Create a new account
+
+Once you have created a wallet, create an account on it:
+
+1. Click the round Petra icon at the top right of the Petra Wallet.
+1. Click **Add Account** at the bottom of the screen.
+1. On the _Import account_ screen, click **Create new account**.
+1. On the _Create account_ screen, click the gray box to see the secret recovery phrase (mnemonic).
+1. Click **Copy** to add the recovery phrase to your clipboard.
+1. Store the recovery phrase in case you reinstall the extension or get a new device.
+1. Find your account in the central Accounts list.
+1. Repeat the steps above to create additional, new accounts.
+
+![Create new account](/petra-create-account.png)
+
+## Import an existing account
+
+To import an existing account into your wallet:
+
+1. Click the round Petra icon at the top right of the Petra Wallet.
+1. Click **Add Account** at the bottom of the screen.
+1. On the _Import account_ screen, click either:
+
+- Import private key
+- Import mnemonic (secret recovery phrase)
+
+1. On the _Import_ screen, enter the account's key or phrase and click **Submit**.
+
+![Import existing account](/petra-import-account.png)
+
+See the instructions to _find account phrase and keys_ in the Petra.
+
+## Access account settings
+
+Various controls exist within the **Settings** menu. Let's find it together:
+
+1. Click the round Petra icon at the top right of the Petra to see all accounts in the wallet.
+1. Click the desired account to select it.
+1. Click the **Settings** tab at bottom right to load the account's settings and other information.
+
+![Access account settings](/petra-account-settings.png)
+
+## Update account settings
+
+Once an account is created, you have numerous options to update it. _Access account settings_ as described above. Then:
+
+- Click the pencil icon next to the wallet name at the top right to change the account name.
+- Click **Security and Privacy** to change the account password or set an auto-lock timer.
+- Click **Help & Security** to access the [Petra Wallet Discord](https://discord.com/invite/petrawallet).
+- Click **Lock wallet** to log out of the account and force re-authentication.
+- Click **Remove account** to delete the account entirely.
+
+![Update account settings](/petra-update-account.png)
+
+## Change wallet network
+
+To change the wallet network, say from devnet to testnet or mainnet:
+
+1. _Access account settings_ as described above.
+1. Click **Network** in the _Settings_ menu.
+1. Select one of the other available networks, including a [local testnet](https://aptos.dev/nodes/local-testnet/using-cli-to-run-a-local-testnet) if one exists.
+1. Confirm the green checkmark appears next to the desired network.
+
+![Change wallet network](/petra-change-network.png)
+
+## Find account address
+
+To find your account address:
+
+1. Click the round Petra icon at the top right of the Petra Wallet.
+1. In the _Accounts_ list, click the copy icon next to the desired account.
+1. Paste the address from your clipboard.
+
+![Find account address](/petra-find-address.png)
+
+## Find account phrase and keys
+
+To find your account's keys and secret recovery phrase:
+
+1. _Access account settings_ as described above.
+1. Click **Manage account** in the Settings menu.
+1. Enter your account's password and click **Next**.
+1. Click **Show** next to the _secret recovery phrase_ or _private key_ to reveal them.
+1. Click **Copy** next to the _public key_ to bring it into your clipboard.
+1. Store your keys and phrases in a safe location.
+
+![Find keys and phrase](/petra-find-keys-phrase.png)
+
+## Get coins with faucet
+
+To get temporary coins for testing the Aptos network, click **Faucet** and follow the instructions.
+
+## Send coins with wallet
+
+To transfer coins in the Petra:
+
+1. Open the wallet and select the desired account.
+1. Visit the _Activity_ tab to copy the addresses of past senders and recipients. See \*Find account address above for help.
+1. On the _Home_ screen, click **Send**.
+1. Enter the account address of the recipient.
+1. Enter the amount of coins to send and click **Next**.
+1. Review the details on the _Confirm transaction_ screen and click **Send**.
+1. See the transaction on both the _Home_ and _Activity_ screens.
+
+![Send coins](/petra-send-coins.png)
+
+## View you account balance
+
+To view your account balance, simply visit the _Home_ screen for the relevant account.
+
+![View balance](/petra-view-balance.png)
+
+## View recent transactions
+
+To see the most recent transactions for an account, you may either:
+
+- View the _RECENT TRANSACTIONS_ list on the _Home_ screen.
+- Click the Activity tab at the bottom of the wallet.
+- Go to _Settings_ and then click **View on explorer** to see all transactions for the account in [Aptos Explorer](https://explorer.aptoslabs.com/).
+
+![View transactions](/petra-view-transactions.png)

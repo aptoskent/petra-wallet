@@ -1,0 +1,1239 @@
+{
+  "+Dl0TV": {
+    "defaultMessage": "You must agree to the Terms of Service"
+  },
+  "+KGP3K": {
+    "defaultMessage": "On-Chain Properties"
+  },
+  "+KdPIM": {
+    "defaultMessage": "Account not found, will be created"
+  },
+  "+MyXqr": {
+    "defaultMessage": "Function not found in module, likely cause is you are unable to transfer alt coins to an uninitialized account"
+  },
+  "+RJ7d7": {
+    "defaultMessage": "Sorry! Your NFT is not loading. Please refresh the browser and try again"
+  },
+  "+RUpou": {
+    "defaultMessage": "Change Wallet Name"
+  },
+  "+U6ozc": {
+    "defaultMessage": "Type"
+  },
+  "+p8iOV": {
+    "defaultMessage": "Adding a custom coin will submit an on-chain transcation and will require a gas fee."
+  },
+  "+xTpT1": {
+    "defaultMessage": "Attributes"
+  },
+  "/0TOL5": {
+    "defaultMessage": "Amount"
+  },
+  "/6/sPX": {
+    "defaultMessage": "Docs"
+  },
+  "/IafdD": {
+    "defaultMessage": "Transaction simulation is loading..."
+  },
+  "/KMYI7": {
+    "defaultMessage": "Stake balance"
+  },
+  "/OjrJH": {
+    "defaultMessage": "Faucet"
+  },
+  "/U+Weh": {
+    "defaultMessage": "Follow us on social media or check out our docs for more info"
+  },
+  "/bPBKN": {
+    "defaultMessage": "Registering {coinName} will submit an on-chain transaction and will require a gas fee."
+  },
+  "/mNh9B": {
+    "defaultMessage": "Gas unit price (in octa)"
+  },
+  "/mOCkD": {
+    "defaultMessage": "Uri"
+  },
+  "/uLmeW": {
+    "defaultMessage": "Your offers received, and pending collectibles sent will show up here."
+  },
+  "/vixtE": {
+    "defaultMessage": "Passwords must match"
+  },
+  "/xro5W": {
+    "defaultMessage": "Accept offer"
+  },
+  "/yNxKS": {
+    "defaultMessage": "No selected path"
+  },
+  "07Xf2y": {
+    "defaultMessage": "Back to settings"
+  },
+  "0Azlrb": {
+    "defaultMessage": "Manage"
+  },
+  "0CKvMV": {
+    "defaultMessage": "Arweave, IPFS, or S3 uri"
+  },
+  "0OsmA+": {
+    "defaultMessage": "Cancel offer"
+  },
+  "0QyN8c": {
+    "defaultMessage": "Offer:"
+  },
+  "0SMaoR": {
+    "defaultMessage": "On Aptos, you can rotate your private key while your account address stays the same. This increases the chances of keeping your assets safe."
+  },
+  "0cEOKu": {
+    "defaultMessage": "Advanced options"
+  },
+  "0gKhg9": {
+    "defaultMessage": "Show phrase again"
+  },
+  "0mCO14": {
+    "defaultMessage": "A network with this name already exists"
+  },
+  "0oL1zz": {
+    "defaultMessage": "Copied!"
+  },
+  "0qt8i+": {
+    "defaultMessage": "New browsers / Device"
+  },
+  "0rIM5R": {
+    "defaultMessage": "Remove Account"
+  },
+  "1+ROfp": {
+    "defaultMessage": "Transaction"
+  },
+  "1ehETW": {
+    "defaultMessage": "Max gas fee"
+  },
+  "1hsG1y": {
+    "defaultMessage": "No coin balance changes"
+  },
+  "1q+kPa": {
+    "defaultMessage": "Import account"
+  },
+  "1yBD5+": {
+    "defaultMessage": "Show Private Key"
+  },
+  "2+wBKg": {
+    "defaultMessage": "NFTs sent as an Offer will need to be claimed by the recipient"
+  },
+  "2/2yg+": {
+    "defaultMessage": "Add"
+  },
+  "2HiGEM": {
+    "defaultMessage": "Token name cannot be empty"
+  },
+  "2JIC6P": {
+    "defaultMessage": "Are you sure you want to reset the password?"
+  },
+  "2LbrkB": {
+    "defaultMessage": "Enter password"
+  },
+  "2MN1aB": {
+    "defaultMessage": "Rotate"
+  },
+  "2WMWKa": {
+    "defaultMessage": "Welcome to Petra"
+  },
+  "2oCaym": {
+    "defaultMessage": "Are you sure?"
+  },
+  "32rBNK": {
+    "defaultMessage": "Terms of Service"
+  },
+  "34Up+l": {
+    "defaultMessage": "View more"
+  },
+  "37xGo5": {
+    "defaultMessage": "Supply"
+  },
+  "3HepmQ": {
+    "defaultMessage": "Symbol"
+  },
+  "3NVilE": {
+    "defaultMessage": "Yes, rotate key"
+  },
+  "3hbWR7": {
+    "defaultMessage": "No attributes"
+  },
+  "3qdYsK": {
+    "defaultMessage": "Gas unit price"
+  },
+  "3u93Cp": {
+    "defaultMessage": "Other assets are coins that we have not verified as legitimate"
+  },
+  "3wsVWF": {
+    "defaultMessage": "Cancelled"
+  },
+  "3yf2ND": {
+    "defaultMessage": "Operator"
+  },
+  "3zIgrc": {
+    "defaultMessage": "Your new secret recovery phrase"
+  },
+  "47FYwb": {
+    "defaultMessage": "Cancel"
+  },
+  "4fPELu": {
+    "defaultMessage": "Function"
+  },
+  "4huas4": {
+    "defaultMessage": "View hidden ({count})"
+  },
+  "4l6vz1": {
+    "defaultMessage": "Copy"
+  },
+  "4nooaV": {
+    "defaultMessage": "How long should we wait to lock your wallet after no activity?"
+  },
+  "50u8OR": {
+    "defaultMessage": "Click to reveal phrase"
+  },
+  "57Aa5/": {
+    "defaultMessage": "Token Amount"
+  },
+  "5DsFkA": {
+    "defaultMessage": "View all activity"
+  },
+  "5Nw04W": {
+    "defaultMessage": "Rotating Key for {account}"
+  },
+  "5lVaeB": {
+    "defaultMessage": "No description"
+  },
+  "5sg7KC": {
+    "defaultMessage": "Password"
+  },
+  "6N9V2n": {
+    "defaultMessage": "Gas Fees"
+  },
+  "6UA+0K": {
+    "defaultMessage": "Coin already registered with the current account. Please register a different coin"
+  },
+  "6t5jEX": {
+    "defaultMessage": "Direct Transfer:"
+  },
+  "7K9jKV": {
+    "defaultMessage": "Manage Account"
+  },
+  "8Rkoyb": {
+    "defaultMessage": "Recipient"
+  },
+  "8b7fVW": {
+    "defaultMessage": "Simulation failed. Please correct coin information and try again. Error message: {error}"
+  },
+  "8qcqcC": {
+    "defaultMessage": "Request approval for transactions"
+  },
+  "8vHfd9": {
+    "defaultMessage": "Offered to:"
+  },
+  "9+Ddtu": {
+    "defaultMessage": "Next"
+  },
+  "93kR60": {
+    "defaultMessage": "Buy with CC, bank transfers or Apple Pay."
+  },
+  "98E9fa": {
+    "defaultMessage": "Reinstall your extension"
+  },
+  "9RFhNn": {
+    "defaultMessage": "OTHER ASSETS"
+  },
+  "9WRlF4": {
+    "defaultMessage": "Send"
+  },
+  "9XUYQt": {
+    "defaultMessage": "Import"
+  },
+  "9j3hXO": {
+    "defaultMessage": "To"
+  },
+  "9l9Gbt": {
+    "defaultMessage": "Approve with {account}"
+  },
+  "A1y3T3": {
+    "defaultMessage": "Claimed"
+  },
+  "A41QIy": {
+    "defaultMessage": "Enter Password"
+  },
+  "A6ozr9": {
+    "defaultMessage": "Collection name"
+  },
+  "A7OxM6": {
+    "defaultMessage": "Make sure that nobody can see your screen."
+  },
+  "Ad1PHL": {
+    "defaultMessage": "Time: {timestamp}"
+  },
+  "AkkKj2": {
+    "defaultMessage": "Cancel this offer"
+  },
+  "AmOKGr": {
+    "defaultMessage": "NFTs sent as a Direct Transfer will be automatically received by the recipient. (If you don't see this as an option it means the recipient has not opted into receiving Direct Transfers.)"
+  },
+  "AqEnT3": {
+    "defaultMessage": "Arguments:"
+  },
+  "BSTKRJ": {
+    "defaultMessage": "Normal view"
+  },
+  "Bep/gA": {
+    "defaultMessage": "Private key"
+  },
+  "BgkMNG": {
+    "defaultMessage": "Recipient address does not exist"
+  },
+  "Bo334N": {
+    "defaultMessage": "Swap",
+    "description": "Button label for coin swap in Wallet main screen"
+  },
+  "C+wlYf": {
+    "defaultMessage": "For the transaction depend on the type of transfer"
+  },
+  "C7gMoZ": {
+    "defaultMessage": "Waiting for confirmed details"
+  },
+  "C7mqam": {
+    "defaultMessage": "Select the transport type for your Ledger device."
+  },
+  "COyZTM": {
+    "defaultMessage": "To {recipient}"
+  },
+  "CPvyYN": {
+    "defaultMessage": "Incorrect password"
+  },
+  "Ck29+3": {
+    "defaultMessage": "Wallet Address"
+  },
+  "CyU4o6": {
+    "defaultMessage": "Switch to Mainnet"
+  },
+  "D3idYv": {
+    "defaultMessage": "Settings"
+  },
+  "D4hk2Y": {
+    "defaultMessage": "Please enter an address"
+  },
+  "D6UU7g": {
+    "defaultMessage": "Add Network"
+  },
+  "DUjcof": {
+    "defaultMessage": "No stake yet!"
+  },
+  "DYwfZQ": {
+    "defaultMessage": "Show secret recovery phrase"
+  },
+  "DaRYRV": {
+    "defaultMessage": "Confirm Send"
+  },
+  "DhesJE": {
+    "defaultMessage": "Changing this setting will submit an on-chain transaction and will require a gas fee."
+  },
+  "E/LOhX": {
+    "defaultMessage": "in the upper right and"
+  },
+  "E0Tesa": {
+    "defaultMessage": "Successfully removed account {account}"
+  },
+  "EBV294": {
+    "defaultMessage": "Petra"
+  },
+  "EDzR9u": {
+    "defaultMessage": "Types:"
+  },
+  "EWdpO3": {
+    "defaultMessage": "Delivery Method"
+  },
+  "Ejz7ig": {
+    "defaultMessage": "View on {storageProvider}"
+  },
+  "EnCOBJ": {
+    "defaultMessage": "Buy"
+  },
+  "Eyi7qo": {
+    "defaultMessage": "Withdrew"
+  },
+  "F3l7xL": {
+    "defaultMessage": "Add Account"
+  },
+  "FFKIHh": {
+    "defaultMessage": "minutes"
+  },
+  "Flx4zl": {
+    "defaultMessage": "No properties"
+  },
+  "FoGGWd": {
+    "defaultMessage": "Successfully opted in to direct transfer of NFTs"
+  },
+  "FvanT6": {
+    "defaultMessage": "Accounts"
+  },
+  "FvmV6q": {
+    "defaultMessage": "Discord"
+  },
+  "G/yZLu": {
+    "defaultMessage": "Remove"
+  },
+  "G3j8yb": {
+    "defaultMessage": "Transaction simulation unsuccessful"
+  },
+  "G9uF7o": {
+    "defaultMessage": "from"
+  },
+  "GJrUd7": {
+    "defaultMessage": "Access an existing wallet with your private key."
+  },
+  "GZo7vg": {
+    "defaultMessage": "See less"
+  },
+  "GhkQ9R": {
+    "defaultMessage": "Gas used"
+  },
+  "H6HEUX": {
+    "defaultMessage": "Advanced view"
+  },
+  "HAlOn1": {
+    "defaultMessage": "Name"
+  },
+  "HLZ9CC": {
+    "defaultMessage": "Credentials"
+  },
+  "HW4PTc": {
+    "defaultMessage": "Petra Version: {version}"
+  },
+  "HfCZj9": {
+    "defaultMessage": "Your NFT was sent to"
+  },
+  "HwLwTa": {
+    "defaultMessage": "Rotate your private key"
+  },
+  "I3JhPS": {
+    "defaultMessage": "Network"
+  },
+  "I3b4hn": {
+    "defaultMessage": "Version"
+  },
+  "IIl7gF": {
+    "defaultMessage": "Between you"
+  },
+  "It0qSm": {
+    "defaultMessage": "Select address"
+  },
+  "J7VlyX": {
+    "defaultMessage": "Speculos"
+  },
+  "JXdbo8": {
+    "defaultMessage": "Done"
+  },
+  "Ja2DYD": {
+    "defaultMessage": "Before proceeding, make sure you follow these instructions:"
+  },
+  "JjNn3d": {
+    "defaultMessage": "Raw writeset"
+  },
+  "JqVGWR": {
+    "defaultMessage": "Import wallet"
+  },
+  "JrVgsW": {
+    "defaultMessage": "Copy address"
+  },
+  "JymXbw": {
+    "defaultMessage": "Private Key"
+  },
+  "K0ovbl": {
+    "defaultMessage": "Waiting for confirmed details..."
+  },
+  "K6Wl+Z": {
+    "defaultMessage": "Function:"
+  },
+  "K7AkdL": {
+    "defaultMessage": "Show"
+  },
+  "KBeQsL": {
+    "defaultMessage": "Connected Apps"
+  },
+  "KoLHDI": {
+    "defaultMessage": "Token address"
+  },
+  "KvqCr1": {
+    "defaultMessage": "Rotate Key"
+  },
+  "L4nXIc": {
+    "defaultMessage": "Change password"
+  },
+  "LISAAB": {
+    "defaultMessage": "Are you sure you want to remove {network}?"
+  },
+  "LUkqzS": {
+    "defaultMessage": "Mutated Token"
+  },
+  "LjNvmm": {
+    "defaultMessage": "Deposited"
+  },
+  "Lv0zJu": {
+    "defaultMessage": "Details"
+  },
+  "Lvbvmp": {
+    "defaultMessage": "This app would like to:"
+  },
+  "M/fMrs": {
+    "defaultMessage": "Error fetching pending offers for token {tokenName}"
+  },
+  "MH9Dua": {
+    "defaultMessage": "Recipient address is invalid"
+  },
+  "MJ2jZQ": {
+    "defaultMessage": "Total"
+  },
+  "N2IrpM": {
+    "defaultMessage": "Confirm"
+  },
+  "N4ReBT": {
+    "defaultMessage": "View Details"
+  },
+  "NCf98L": {
+    "defaultMessage": "Import from Ledger"
+  },
+  "NIynnB": {
+    "defaultMessage": "Current password"
+  },
+  "NLeFGn": {
+    "defaultMessage": "to"
+  },
+  "NNoady": {
+    "defaultMessage": "Loading user's on-chain data. Please wait..."
+  },
+  "NT4oNW": {
+    "defaultMessage": "View on explorer"
+  },
+  "NrVzeo": {
+    "defaultMessage": "Error occured when claiming token offer from"
+  },
+  "O+Skg2": {
+    "defaultMessage": "You'll use this to unlock your wallet"
+  },
+  "O/ZLSa": {
+    "defaultMessage": "Enter mnemonic/private key"
+  },
+  "O8cjsZ": {
+    "defaultMessage": "No assets yet!"
+  },
+  "OABRr6": {
+    "defaultMessage": "Error fetching token activity"
+  },
+  "OKy/1E": {
+    "defaultMessage": "All of your transactions and dApp interactions will show up here."
+  },
+  "ON8AbY": {
+    "defaultMessage": "Enter mnemonic"
+  },
+  "Ost4Tm": {
+    "defaultMessage": "From {sender}"
+  },
+  "P+EtTU": {
+    "defaultMessage": "Wallet recovery scenarios"
+  },
+  "P/3qxH": {
+    "defaultMessage": "The offer was accepted!"
+  },
+  "P7PLVj": {
+    "defaultMessage": "Date"
+  },
+  "P8kbJD": {
+    "defaultMessage": "Locked until {unlockDate}"
+  },
+  "PHGyGk": {
+    "defaultMessage": "You can now close this page and return to the extension."
+  },
+  "PHmOrs": {
+    "defaultMessage": "NFT Name"
+  },
+  "PPucx+": {
+    "defaultMessage": "Please enter all spaces for mnemonic"
+  },
+  "PW6N9T": {
+    "defaultMessage": "Loading max gas fee..."
+  },
+  "PdBvV5": {
+    "defaultMessage": "Create a collectible"
+  },
+  "PhUUVD": {
+    "defaultMessage": "Network fee: {networkFee}"
+  },
+  "PoizHJ": {
+    "defaultMessage": "Pending offers"
+  },
+  "PuU15u": {
+    "defaultMessage": "Not connected"
+  },
+  "Q8Qw5B": {
+    "defaultMessage": "Description"
+  },
+  "Qe72S4": {
+    "defaultMessage": "Error occurred when opting out of direct transfer NFTs"
+  },
+  "QxCD8j": {
+    "defaultMessage": "Learn more about key rotation"
+  },
+  "R+J5ox": {
+    "defaultMessage": "Review"
+  },
+  "R89fgM": {
+    "defaultMessage": "Successfully added {coinName} to wallet"
+  },
+  "RAol2O": {
+    "defaultMessage": "Failed to fetch user's on-chain data. Please refresh and try again"
+  },
+  "RahCRH": {
+    "defaultMessage": "Expired"
+  },
+  "Rlrwui": {
+    "defaultMessage": "Loading amount..."
+  },
+  "RrCui3": {
+    "defaultMessage": "Summary"
+  },
+  "RwVi3u": {
+    "defaultMessage": "Copy private key"
+  },
+  "S5tBcz": {
+    "defaultMessage": "Stake"
+  },
+  "SENRqu": {
+    "defaultMessage": "Help"
+  },
+  "SNT2Ue": {
+    "defaultMessage": "Unable to estimate gas fee",
+    "description": "Message to show when gas fee cannot be estimated from running simulation"
+  },
+  "SOYmp1": {
+    "defaultMessage": "Coin transfer"
+  },
+  "SaiF/n": {
+    "defaultMessage": "Coin mint"
+  },
+  "StcK67": {
+    "defaultMessage": "Library"
+  },
+  "T/0DcU": {
+    "defaultMessage": "Account not found."
+  },
+  "T5kbhl": {
+    "defaultMessage": "Rotating your private key will generate a new secret recovery phrase."
+  },
+  "T7Ry38": {
+    "defaultMessage": "Message"
+  },
+  "TI8tRS": {
+    "defaultMessage": "Minted"
+  },
+  "Tsvef3": {
+    "defaultMessage": "Cancel Offer"
+  },
+  "TwyMau": {
+    "defaultMessage": "Account"
+  },
+  "U71ECB": {
+    "defaultMessage": "Transaction simulation errored"
+  },
+  "U8QBHO": {
+    "defaultMessage": "By"
+  },
+  "UBWAfV": {
+    "defaultMessage": "Gas unit price entered is invalid or too high, must be less than 20,000 OCTA"
+  },
+  "UHoglJ": {
+    "defaultMessage": "No collectibles yet."
+  },
+  "UNinVQ": {
+    "defaultMessage": "ALL COINS"
+  },
+  "UPGW9b": {
+    "defaultMessage": "Network fee"
+  },
+  "UWGfjh": {
+    "defaultMessage": "Add Custom Coin"
+  },
+  "UWuQ8m": {
+    "defaultMessage": "Account added successfully."
+  },
+  "UdOBQs": {
+    "defaultMessage": "Welcome back",
+    "description": "Title for the first page displayed to returning users"
+  },
+  "UsLZes": {
+    "defaultMessage": "Create a password"
+  },
+  "Uz+LeN": {
+    "defaultMessage": "Approve cancellation"
+  },
+  "V4ICwp": {
+    "defaultMessage": "ASSETS"
+  },
+  "V7FBO0": {
+    "defaultMessage": "Remove {account} ?"
+  },
+  "V9ArUb": {
+    "defaultMessage": "Copy timestamp"
+  },
+  "VA/Z1S": {
+    "defaultMessage": "Hide"
+  },
+  "VhTbuw": {
+    "defaultMessage": "RECENT ACTIVITY"
+  },
+  "VzzYJk": {
+    "defaultMessage": "Create"
+  },
+  "W/f6jp": {
+    "defaultMessage": "NFT will show up as 'Pending'. The recipient then has to accept the NFT so that it can be deposited into their wallet"
+  },
+  "W4dA14": {
+    "defaultMessage": "Secret Recovery Phrase"
+  },
+  "W7l9pP": {
+    "defaultMessage": "No connected apps"
+  },
+  "W83XBB": {
+    "defaultMessage": "The transaction has been sent"
+  },
+  "WCaf5C": {
+    "defaultMessage": "Approve"
+  },
+  "WExVSr": {
+    "defaultMessage": "Gallery"
+  },
+  "WzAYkN": {
+    "defaultMessage": "REGISTERED"
+  },
+  "X3cPZu": {
+    "defaultMessage": "Error fetching pending token offers & claims"
+  },
+  "X4X6MC": {
+    "defaultMessage": "Keep your phrase safe!"
+  },
+  "XAOpEZ": {
+    "defaultMessage": "Show Secret Recovery Phrase"
+  },
+  "XJND8b": {
+    "defaultMessage": "Balance changes"
+  },
+  "Xiq62I": {
+    "defaultMessage": "Allow anyone to send you NFTs"
+  },
+  "Y1iRas": {
+    "defaultMessage": "Create password"
+  },
+  "YClwP1": {
+    "defaultMessage": "Too long"
+  },
+  "YHe3JR": {
+    "defaultMessage": "Accept this offer"
+  },
+  "YrVSj3": {
+    "defaultMessage": "New private key"
+  },
+  "Yy/yDL": {
+    "defaultMessage": "Reset password"
+  },
+  "Z657Gc": {
+    "defaultMessage": "Network Fee"
+  },
+  "Z8971h": {
+    "defaultMessage": "Verified"
+  },
+  "ZE5nvr": {
+    "defaultMessage": "Your NFT offer to"
+  },
+  "ZFYXC/": {
+    "defaultMessage": "Faucet URL (optional)"
+  },
+  "ZmlNQ3": {
+    "defaultMessage": "Activity"
+  },
+  "ZvtAoY": {
+    "defaultMessage": "Other people can automatically airdrop NFTs into your wallet without you needing to accept them."
+  },
+  "a5msuh": {
+    "defaultMessage": "Yes"
+  },
+  "a73NeU": {
+    "defaultMessage": "This 12-word phrase allows you to recover your wallet and access to the coins inside."
+  },
+  "aL8o+1": {
+    "defaultMessage": "Gas fees:"
+  },
+  "acrOoz": {
+    "defaultMessage": "Continue"
+  },
+  "aojEGT": {
+    "defaultMessage": "No activity yet"
+  },
+  "at5WZw": {
+    "defaultMessage": "Check out these marketplaces to get your first Aptos NFTs."
+  },
+  "bDXUOC": {
+    "defaultMessage": "Enter private key"
+  },
+  "bM2XEJ": {
+    "defaultMessage": "Token symbol cannot be empty"
+  },
+  "bTxN/J": {
+    "defaultMessage": "Enter wallet name"
+  },
+  "bW7B87": {
+    "defaultMessage": "New"
+  },
+  "bX6XM8": {
+    "defaultMessage": "This is what you use to receive funds."
+  },
+  "bj0Mez": {
+    "defaultMessage": "Offered"
+  },
+  "bkM6S+": {
+    "defaultMessage": "Successfully opted out of direct transfer of NFTs"
+  },
+  "bmo5gN": {
+    "defaultMessage": "Collectibles"
+  },
+  "cDveFM": {
+    "defaultMessage": "Delivery Methods"
+  },
+  "cDwFID": {
+    "defaultMessage": "Invalid address"
+  },
+  "cGPdyw": {
+    "defaultMessage": "Official"
+  },
+  "cKzera": {
+    "defaultMessage": "Next: Go to"
+  },
+  "cS2S73": {
+    "defaultMessage": "PLEASE NOTE: You will not be able to recover your wallet account unless you have stored the private key or mnemonic associated with your wallet address."
+  },
+  "cU42T7": {
+    "defaultMessage": "Add another account"
+  },
+  "cjrJV5": {
+    "defaultMessage": "Enter private key here"
+  },
+  "cqZqGK": {
+    "defaultMessage": "cancel"
+  },
+  "cyR7Kh": {
+    "defaultMessage": "Back"
+  },
+  "d19HEG": {
+    "defaultMessage": "Name is too long"
+  },
+  "dCK+iq": {
+    "defaultMessage": "Password strength must be at least \"strong\""
+  },
+  "dGlNTc": {
+    "defaultMessage": "Add coin to wallet"
+  },
+  "dLXHwc": {
+    "defaultMessage": "Please enter a valid private key"
+  },
+  "dM+p3/": {
+    "defaultMessage": "From"
+  },
+  "dPRUFg": {
+    "defaultMessage": "A network with this nodeUrl already exists"
+  },
+  "dUz4UZ": {
+    "defaultMessage": "Enter Your Secret Recovery Phrase"
+  },
+  "dX7+Rv": {
+    "defaultMessage": "Confirmed"
+  },
+  "ddpv6U": {
+    "defaultMessage": "Error loading aggregator",
+    "description": "error title when aggregator failed to load for coin swap"
+  },
+  "djJp6c": {
+    "defaultMessage": "History"
+  },
+  "dqQE9k": {
+    "defaultMessage": "Offer"
+  },
+  "e6Ph5+": {
+    "defaultMessage": "Address"
+  },
+  "eCSA01": {
+    "defaultMessage": "Create New Wallet"
+  },
+  "eKEL/g": {
+    "defaultMessage": "Pending"
+  },
+  "eLelJ8": {
+    "defaultMessage": "Apps connected to your Petra wallet will show up here."
+  },
+  "eeTr1V": {
+    "defaultMessage": "Import mnemonic"
+  },
+  "ejEGdx": {
+    "defaultMessage": "Home"
+  },
+  "fe7Y2Z": {
+    "defaultMessage": "Confirm new password"
+  },
+  "g2iaEu": {
+    "defaultMessage": "Gas fee",
+    "description": "Gas fee label in send token drawer"
+  },
+  "gA56us": {
+    "defaultMessage": "From: {sender}"
+  },
+  "gcuDcH": {
+    "defaultMessage": "Sent"
+  },
+  "hcWAUP": {
+    "defaultMessage": "{gasAmount} gas units"
+  },
+  "hk3zDE": {
+    "defaultMessage": "Insert the PIN to unlock"
+  },
+  "hrSvUF": {
+    "defaultMessage": "Custom network"
+  },
+  "huqKGl": {
+    "defaultMessage": "Create account"
+  },
+  "iHZhfn": {
+    "defaultMessage": "Error message: {error}"
+  },
+  "iXNbPf": {
+    "defaultMessage": "Rename"
+  },
+  "idfL7G": {
+    "defaultMessage": "Successfully added {coinName} to your coins"
+  },
+  "ikPf7q": {
+    "defaultMessage": "Max gas units"
+  },
+  "imu9hb": {
+    "defaultMessage": "Error occurred when opting in to direct transfer NFTs"
+  },
+  "iwnsQT": {
+    "defaultMessage": "pin the Petra wallet to your browser"
+  },
+  "j9ckyi": {
+    "defaultMessage": "Although you are removing this from your Aptos wallet, you'll be able to retrieve if using your mnemonic phrase."
+  },
+  "jecC36": {
+    "defaultMessage": "Public key"
+  },
+  "jqPCOM": {
+    "defaultMessage": "Raw events"
+  },
+  "jvo0vs": {
+    "defaultMessage": "Save"
+  },
+  "jxBuJZ": {
+    "defaultMessage": "Copy secret recovery phrase"
+  },
+  "k5EoJ8": {
+    "defaultMessage": "Security and Privacy"
+  },
+  "kF9XUo": {
+    "defaultMessage": "Timestamp"
+  },
+  "kJ5W29": {
+    "defaultMessage": "You"
+  },
+  "kWYt10": {
+    "defaultMessage": "Manage Assets"
+  },
+  "kb/1kq": {
+    "defaultMessage": "Import private key"
+  },
+  "klIU5R": {
+    "defaultMessage": "If you lose it you'll have no way of accessing your assets."
+  },
+  "l/WZz6": {
+    "defaultMessage": "Import type"
+  },
+  "lDx4W+": {
+    "defaultMessage": "Gas fees"
+  },
+  "lKcMQZ": {
+    "defaultMessage": "Guiding your web3 journey."
+  },
+  "lUhsY2": {
+    "defaultMessage": "Connection request"
+  },
+  "lWbObc": {
+    "defaultMessage": "Create Wallet"
+  },
+  "lfG/+z": {
+    "defaultMessage": "Add custom coin to wallet"
+  },
+  "lnu/UI": {
+    "defaultMessage": "Failed retrieving collectibles"
+  },
+  "m7ySr1": {
+    "defaultMessage": "Open the Aptos nano app"
+  },
+  "mKJujO": {
+    "defaultMessage": "Account added"
+  },
+  "mNbOVG": {
+    "defaultMessage": "go back"
+  },
+  "mNjlJV": {
+    "defaultMessage": "Node is not available"
+  },
+  "mPY8Yb": {
+    "defaultMessage": "Gas fee: {gasFee}",
+    "description": "Gas fee label in approve token transaction drawer"
+  },
+  "me1nR+": {
+    "defaultMessage": "Copy Address"
+  },
+  "mgArrI": {
+    "defaultMessage": "Error occured when adding {coinName} to wallet"
+  },
+  "nDH9FN": {
+    "defaultMessage": "Yes, I understand"
+  },
+  "nucW7E": {
+    "defaultMessage": "Add a wallet address"
+  },
+  "o14Wdp": {
+    "defaultMessage": "Auto-lock Timer"
+  },
+  "oAh3TU": {
+    "defaultMessage": "Password..."
+  },
+  "oTzn0m": {
+    "defaultMessage": "Metadata storage"
+  },
+  "p1P+hQ": {
+    "defaultMessage": "Request"
+  },
+  "p4mBmL": {
+    "defaultMessage": "Created by"
+  },
+  "p556q3": {
+    "defaultMessage": "Copied"
+  },
+  "pMJdXF": {
+    "defaultMessage": "To: {recipient}"
+  },
+  "pd5KiZ": {
+    "defaultMessage": "Transaction Summary"
+  },
+  "phAZoj": {
+    "defaultMessage": "Collection"
+  },
+  "phTfBA": {
+    "defaultMessage": "Create new account"
+  },
+  "piGHex": {
+    "defaultMessage": "Balance: {balance}, fees: {fees}"
+  },
+  "ptIaAV": {
+    "defaultMessage": "Some resources were changed, please see the events and writeset below for more details"
+  },
+  "q5Xl0M": {
+    "defaultMessage": "Verify"
+  },
+  "qJcduu": {
+    "defaultMessage": "Add account"
+  },
+  "qVGRIE": {
+    "defaultMessage": "Quantity"
+  },
+  "qXCbgZ": {
+    "defaultMessage": "Unlock"
+  },
+  "qa6BVK": {
+    "defaultMessage": "approve"
+  },
+  "qfRzkp": {
+    "defaultMessage": "Amount must not be negative"
+  },
+  "qgxVNm": {
+    "defaultMessage": "Hidden offers"
+  },
+  "qkQcMI": {
+    "defaultMessage": "Approve transaction"
+  },
+  "qtgWzm": {
+    "defaultMessage": "{coinSymbol} CoinStore is not registered for recipient"
+  },
+  "r6zf4H": {
+    "defaultMessage": "Remove account"
+  },
+  "rIAJlE": {
+    "defaultMessage": "Added"
+  },
+  "rStR4L": {
+    "defaultMessage": "Import Wallet"
+  },
+  "rX9zPz": {
+    "defaultMessage": "Buy APT"
+  },
+  "raBTZk": {
+    "defaultMessage": "please check your connection"
+  },
+  "rbrahO": {
+    "defaultMessage": "Close"
+  },
+  "rf7C5T": {
+    "defaultMessage": "{token} was successfully claimed from {account}"
+  },
+  "rlE/qx": {
+    "defaultMessage": "Select a derivation path or an address from below"
+  },
+  "sQ4R9E": {
+    "defaultMessage": "View your balance and activity"
+  },
+  "sUywsf": {
+    "defaultMessage": "No pending offers"
+  },
+  "sjzLbX": {
+    "defaultMessage": "Accept"
+  },
+  "snX6Nd": {
+    "defaultMessage": "Signature request"
+  },
+  "tC2rTu": {
+    "defaultMessage": "A description of your collection"
+  },
+  "tFriEi": {
+    "defaultMessage": "Transaction error"
+  },
+  "tVyT4P": {
+    "defaultMessage": "Token address cannot be empty"
+  },
+  "tWuHTb": {
+    "defaultMessage": "Please open the extension and create an account."
+  },
+  "tZRQET": {
+    "defaultMessage": "Error occured when cancelling token offer to"
+  },
+  "tnRDuU": {
+    "defaultMessage": "Revoke"
+  },
+  "tqO+QF": {
+    "defaultMessage": "was successfully canceled"
+  },
+  "tzMNF3": {
+    "defaultMessage": "Status"
+  },
+  "uDbS3L": {
+    "defaultMessage": "Transaction Successful"
+  },
+  "uT4OlP": {
+    "defaultMessage": "Fee"
+  },
+  "ug/Ph4": {
+    "defaultMessage": "Connect your Ledger device to your computer"
+  },
+  "urmEDH": {
+    "defaultMessage": "Pair with Ledger"
+  },
+  "uy4mGe": {
+    "defaultMessage": "Auto-Lock Timer"
+  },
+  "v+3pqk": {
+    "defaultMessage": "No token left"
+  },
+  "v14Bg2": {
+    "defaultMessage": "Direct Transfer"
+  },
+  "v7Trp+": {
+    "defaultMessage": "Add custom coin"
+  },
+  "vDFzIP": {
+    "defaultMessage": "Remove network"
+  },
+  "vXCeIi": {
+    "defaultMessage": "Failed"
+  },
+  "vZO4p4": {
+    "defaultMessage": "Transaction details"
+  },
+  "vZp6iw": {
+    "defaultMessage": "Recipient:"
+  },
+  "vckBAj": {
+    "defaultMessage": "Error occured when adding {coinName} to your coins"
+  },
+  "vfG+nh": {
+    "defaultMessage": "Confirm Password"
+  },
+  "vwxnZO": {
+    "defaultMessage": "Voter"
+  },
+  "vzrmKt": {
+    "defaultMessage": "Receiving NFTs"
+  },
+  "wB0dbT": {
+    "defaultMessage": "Send token"
+  },
+  "wBJT4Y": {
+    "defaultMessage": "I agree to the {termsOfService}"
+  },
+  "wLQ/u0": {
+    "defaultMessage": "Secret recovery phrase"
+  },
+  "wSZR47": {
+    "defaultMessage": "Submit"
+  },
+  "wVz0n0": {
+    "defaultMessage": "Error occured while sending transaction"
+  },
+  "x0kFWC": {
+    "defaultMessage": "Welcome to your wallet"
+  },
+  "xHmh0Y": {
+    "defaultMessage": "No pending token offers & claims"
+  },
+  "xQXSru": {
+    "defaultMessage": "Token name"
+  },
+  "xfsBG7": {
+    "defaultMessage": "(Metadata structure)"
+  },
+  "xmcVZ0": {
+    "defaultMessage": "Search"
+  },
+  "xrKHS6": {
+    "defaultMessage": "Success"
+  },
+  "yAFIOD": {
+    "defaultMessage": "Amount is over balance (balance is {balance}"
+  },
+  "yWzZDh": {
+    "defaultMessage": "🎉 You're all done!"
+  },
+  "yh9Dql": {
+    "defaultMessage": "Loading number amount..."
+  },
+  "yoLwRW": {
+    "defaultMessage": "See more"
+  },
+  "yw7Pt7": {
+    "defaultMessage": "HID"
+  },
+  "yzcfnV": {
+    "defaultMessage": "Can submit"
+  },
+  "z+/crE": {
+    "defaultMessage": "Error loading aggregator for coin swap. Please refresh and try again.",
+    "description": "error message body when aggregator failed to load for coin swap"
+  },
+  "z/wUXE": {
+    "defaultMessage": "Received"
+  },
+  "z8oOG0": {
+    "defaultMessage": "Offer canceled."
+  }
+}

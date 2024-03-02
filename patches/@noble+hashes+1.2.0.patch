@@ -1,0 +1,132 @@
+diff --git a/node_modules/@noble/hashes/_sha2.js b/node_modules/@noble/hashes/_sha2.js
+index 398d446..40184fe 100644
+--- a/node_modules/@noble/hashes/_sha2.js
++++ b/node_modules/@noble/hashes/_sha2.js
+@@ -3,14 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
+ exports.SHA2 = void 0;
+ const _assert_js_1 = require("./_assert.js");
+ const utils_js_1 = require("./utils.js");
++const _u64_js_1 = require("./_u64.js");
+ // Polyfill for Safari 14
+ function setBigUint64(view, byteOffset, value, isLE) {
+     if (typeof view.setBigUint64 === 'function')
+         return view.setBigUint64(byteOffset, value, isLE);
+-    const _32n = BigInt(32);
+-    const _u32_max = BigInt(0xffffffff);
+-    const wh = Number((value >> _32n) & _u32_max);
+-    const wl = Number(value & _u32_max);
++    const { h: wh, l: wl } = _u64_js_1.fromBig(value, isLE);
+     const h = isLE ? 4 : 0;
+     const l = isLE ? 0 : 4;
+     view.setUint32(byteOffset + h, wh, isLE);
+diff --git a/node_modules/@noble/hashes/_u64.js b/node_modules/@noble/hashes/_u64.js
+index 2e1936d..43eccf7 100644
+--- a/node_modules/@noble/hashes/_u64.js
++++ b/node_modules/@noble/hashes/_u64.js
+@@ -5,9 +5,12 @@ const U32_MASK64 = BigInt(2 ** 32 - 1);
+ const _32n = BigInt(32);
+ // We are not using BigUint64Array, because they are extremely slow as per 2022
+ function fromBig(n, le = false) {
++    if (Math.abs(n) > U32_MASK64) {
++        throw new Error(String(n) + " is too large for splitting.");
++    }
+     if (le)
+-        return { h: Number(n & U32_MASK64), l: Number((n >> _32n) & U32_MASK64) };
+-    return { h: Number((n >> _32n) & U32_MASK64) | 0, l: Number(n & U32_MASK64) | 0 };
++        return { h: Number(n & U32_MASK64), l: 0 };
++    return { h: 0, l: Number(n & U32_MASK64) | 0 };
+ }
+ exports.fromBig = fromBig;
+ function split(lst, le = false) {
+diff --git a/node_modules/@noble/hashes/sha3.js b/node_modules/@noble/hashes/sha3.js
+index 56c7b08..707424f 100644
+--- a/node_modules/@noble/hashes/sha3.js
++++ b/node_modules/@noble/hashes/sha3.js
+@@ -4,30 +4,24 @@ exports.shake256 = exports.shake128 = exports.keccak_512 = exports.keccak_384 =
+ const _assert_js_1 = require("./_assert.js");
+ const _u64_js_1 = require("./_u64.js");
+ const utils_js_1 = require("./utils.js");
+-// Various per round constants calculations
+-const [SHA3_PI, SHA3_ROTL, _SHA3_IOTA] = [[], [], []];
+-const _0n = BigInt(0);
+-const _1n = BigInt(1);
+-const _2n = BigInt(2);
+-const _7n = BigInt(7);
+-const _256n = BigInt(256);
+-const _0x71n = BigInt(0x71);
+-for (let round = 0, R = _1n, x = 1, y = 0; round < 24; round++) {
+-    // Pi
+-    [x, y] = [y, (2 * x + 3 * y) % 5];
+-    SHA3_PI.push(2 * (5 * y + x));
+-    // Rotational
+-    SHA3_ROTL.push((((round + 1) * (round + 2)) / 2) % 64);
+-    // Iota
+-    let t = _0n;
+-    for (let j = 0; j < 7; j++) {
+-        R = ((R << _1n) ^ ((R >> _7n) * _0x71n)) % _256n;
+-        if (R & _2n)
+-            t ^= _1n << ((_1n << BigInt(j)) - _1n);
+-    }
+-    _SHA3_IOTA.push(t);
+-}
+-const [SHA3_IOTA_H, SHA3_IOTA_L] = _u64_js_1.default.split(_SHA3_IOTA, true);
++const SHA3_PI = [
++    20, 14, 22, 34, 36, 6, 10, 32, 16, 42, 48, 8, 30, 46, 38, 26, 24, 4, 40, 28,
++    44, 18, 12, 2,
++];
++const SHA3_ROTL = [
++    1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 2, 14, 27, 41, 56, 8, 25, 43, 62, 18, 39,
++    61, 20, 44,
++];
++const SHA3_IOTA_H = new Uint32Array([
++    1, 32898, 32906, 2147516416, 32907, 2147483649, 2147516545, 32777, 138, 136,
++    2147516425, 2147483658, 2147516555, 139, 32905, 32771, 32770, 128, 32778,
++    2147483658, 2147516545, 32896, 2147483649, 2147516424,
++]);
++const SHA3_IOTA_L = new Uint32Array([
++    0, 0, 2147483648, 2147483648, 0, 0, 2147483648, 2147483648, 0, 0, 0, 0, 0,
++    2147483648, 2147483648, 2147483648, 2147483648, 2147483648, 0, 2147483648,
++    2147483648, 2147483648, 0, 2147483648,
++]);
+ // Left rotation (without 0, 32, 64)
+ const rotlH = (h, l, s) => s > 32 ? _u64_js_1.default.rotlBH(h, l, s) : _u64_js_1.default.rotlSH(h, l, s);
+ const rotlL = (h, l, s) => s > 32 ? _u64_js_1.default.rotlBL(h, l, s) : _u64_js_1.default.rotlSL(h, l, s);
+diff --git a/node_modules/@noble/hashes/sha512.js b/node_modules/@noble/hashes/sha512.js
+index 951a314..ce799da 100644
+--- a/node_modules/@noble/hashes/sha512.js
++++ b/node_modules/@noble/hashes/sha512.js
+@@ -4,30 +4,11 @@ exports.sha384 = exports.sha512_256 = exports.sha512_224 = exports.sha512 = expo
+ const _sha2_js_1 = require("./_sha2.js");
+ const _u64_js_1 = require("./_u64.js");
+ const utils_js_1 = require("./utils.js");
+-// Round contants (first 32 bits of the fractional parts of the cube roots of the first 80 primes 2..409):
+ // prettier-ignore
+-const [SHA512_Kh, SHA512_Kl] = _u64_js_1.default.split([
+-    '0x428a2f98d728ae22', '0x7137449123ef65cd', '0xb5c0fbcfec4d3b2f', '0xe9b5dba58189dbbc',
+-    '0x3956c25bf348b538', '0x59f111f1b605d019', '0x923f82a4af194f9b', '0xab1c5ed5da6d8118',
+-    '0xd807aa98a3030242', '0x12835b0145706fbe', '0x243185be4ee4b28c', '0x550c7dc3d5ffb4e2',
+-    '0x72be5d74f27b896f', '0x80deb1fe3b1696b1', '0x9bdc06a725c71235', '0xc19bf174cf692694',
+-    '0xe49b69c19ef14ad2', '0xefbe4786384f25e3', '0x0fc19dc68b8cd5b5', '0x240ca1cc77ac9c65',
+-    '0x2de92c6f592b0275', '0x4a7484aa6ea6e483', '0x5cb0a9dcbd41fbd4', '0x76f988da831153b5',
+-    '0x983e5152ee66dfab', '0xa831c66d2db43210', '0xb00327c898fb213f', '0xbf597fc7beef0ee4',
+-    '0xc6e00bf33da88fc2', '0xd5a79147930aa725', '0x06ca6351e003826f', '0x142929670a0e6e70',
+-    '0x27b70a8546d22ffc', '0x2e1b21385c26c926', '0x4d2c6dfc5ac42aed', '0x53380d139d95b3df',
+-    '0x650a73548baf63de', '0x766a0abb3c77b2a8', '0x81c2c92e47edaee6', '0x92722c851482353b',
+-    '0xa2bfe8a14cf10364', '0xa81a664bbc423001', '0xc24b8b70d0f89791', '0xc76c51a30654be30',
+-    '0xd192e819d6ef5218', '0xd69906245565a910', '0xf40e35855771202a', '0x106aa07032bbd1b8',
+-    '0x19a4c116b8d2d0c8', '0x1e376c085141ab53', '0x2748774cdf8eeb99', '0x34b0bcb5e19b48a8',
+-    '0x391c0cb3c5c95a63', '0x4ed8aa4ae3418acb', '0x5b9cca4f7763e373', '0x682e6ff3d6b2b8a3',
+-    '0x748f82ee5defb2fc', '0x78a5636f43172f60', '0x84c87814a1f0ab72', '0x8cc702081a6439ec',
+-    '0x90befffa23631e28', '0xa4506cebde82bde9', '0xbef9a3f7b2c67915', '0xc67178f2e372532b',
+-    '0xca273eceea26619c', '0xd186b8c721c0c207', '0xeada7dd6cde0eb1e', '0xf57d4f7fee6ed178',
+-    '0x06f067aa72176fba', '0x0a637dc5a2c898a6', '0x113f9804bef90dae', '0x1b710b35131c471b',
+-    '0x28db77f523047d84', '0x32caab7b40c72493', '0x3c9ebe0a15c9bebc', '0x431d67c49c100d4c',
+-    '0x4cc5d4becb3e42b6', '0x597f299cfc657e2a', '0x5fcb6fab3ad6faec', '0x6c44198c4a475817'
+-].map(n => BigInt(n)));
++
++const SHA512_Kh = [1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298, 3391569614, 3515267271, 3940187606, 4118630271, 116418474, 174292421, 289380356, 460393269, 685471733, 852142971, 1017036298, 1126000580, 1288033470, 1501505948, 1607167915, 1816402316];
++const SHA512_Kl = [3609767458, 602891725, 3964484399, 2173295548, 4081628472, 3053834265, 2937671579, 3664609560, 2734883394, 1164996542, 1323610764, 3590304994, 4068182383, 991336113, 633803317, 3479774868, 2666613458, 944711139, 2341262773, 2007800933, 1495990901, 1856431235, 3175218132, 2198950837, 3999719339, 766784016, 2566594879, 3203337956, 1034457026, 2466948901, 3758326383, 168717936, 1188179964, 1546045734, 1522805485, 2643833823, 2343527390, 1014477480, 1206759142, 344077627, 1290863460, 3158454273, 3505952657, 106217008, 3606008344, 1432725776, 1467031594, 851169720, 3100823752, 1363258195, 3750685593, 3785050280, 3318307427, 3812723403, 2003034995, 3602036899, 1575990012, 1125592928, 2716904306, 442776044, 593698344, 3733110249, 2999351573, 3815920427, 3928383900, 566280711, 3454069534, 4000239992, 1914138554, 2731055270, 3203993006, 320620315, 587496836, 1086792851, 365543100, 2618297676, 3409855158, 4234509866, 987167468, 1246189591];
++
+ // Temporary buffer, not used to store anything between runs
+ const SHA512_W_H = new Uint32Array(80);
+ const SHA512_W_L = new Uint32Array(80);

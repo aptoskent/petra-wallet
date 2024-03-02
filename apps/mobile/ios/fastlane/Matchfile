@@ -1,0 +1,15 @@
+
+
+storage_mode("google_cloud")
+google_cloud_bucket_name("petra-cicd")
+google_cloud_keys_file("gc_keys.json")
+type("appstore") # The default type, can be: appstore, adhoc, enterprise or development
+
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options 
+
+# The docs are available on https://docs.fastlane.tools/actions/match
+
+app_identifier(["com.aptoslabs.petra"])
+team_id("SV88L79CZJ")
+keychain_name("signing-db")
